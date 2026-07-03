@@ -1,0 +1,124 @@
+/* ========== HERO ========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #ffffff;
+}
+
+.header-sito {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 30px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.nome-sito {
+    font-family: "Yeseva One", serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.main-nav {
+    display: flex;
+    gap: 45px;
+}
+
+.main-nav a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    opacity: 0.7;
+}
+
+.hero { 
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/Hero_home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-testo {
+    color: #ffffff;
+    width: 100%;
+}
+
+.hero-testo h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.sottotitolo {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* ========== DESCRIZIONE SITO ========== */
+
+.descrizione {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 130px 0 190px;
+}
+
+.contenitore {
+    width: 850px;
+    margin-left: 320px;
+}
+
+.testo-descrizione {
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.citazione {
+    width: 980px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.25;
+    color: #000000;
+    margin-top: 50px;
+}
+
+.autore {
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    color: #000000;
+}
+
