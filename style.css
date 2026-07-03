@@ -122,3 +122,145 @@ body {
     color: #000000;
 }
 
+/* ========== CARD IN EVIDENZA ========== */
+
+.contenuti {
+    width: 100%;
+    padding: 120px 0 180px;
+}
+
+.contenitore-card {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.contenitore-card h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.griglia-card {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.card-principale {
+    position: relative;
+    display: block;
+    width: 980px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #303030;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card-principale .immagine-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-secondarie {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.card-piccola {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #303030;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card-piccola .immagine-card {
+    position: absolute;
+    display: block;
+    max-width: none;
+    height: auto;
+    object-fit: unset;
+}
+
+/* POSIZIONAMENTO IMMAGINI CARD PICCOLE */
+.img-percezione {
+    width: 370px;
+    left: 25px;
+    top: 0;
+}
+
+.img-teoria {
+    width: 360px;
+    left: 0;
+    right: 0;
+    top: 38px;
+    margin: 0 auto;
+}
+
+.img-modelli {
+    width: 390px;
+    right: 35px;
+    top: 45px;
+}
+
+/* TESTI CARD */
+.card-principale h3 {
+    position: absolute;
+    top: 14px;
+    left: 28px;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.card-piccola h4 {
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    z-index: 3;
+}
+
+/* OVERLAY */
+
+.card-principale::after,
+.card-piccola::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+.card-principale:hover::after,
+.card-piccola:hover::after {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* HOVER */
+
+.card-principale:hover,
+.card-piccola:hover {
+    transform: translateY(-5px);
+}
