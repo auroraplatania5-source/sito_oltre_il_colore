@@ -29,6 +29,7 @@ body {
     font-family: "Yeseva One", serif;
     font-size: 22px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .main-nav {
@@ -175,6 +176,7 @@ body {
 .card-piccola {
     position: relative;
     display: block;
+    flex: 1;
     height: 300px;
     overflow: hidden;
     border-radius: 30px;
@@ -293,4 +295,76 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
+}
+
+/* ========== SEZIONE IL COLORE COME LINGUAGGIO VISIVO ========== */
+/* ========== HEADER PAGINA LINGUAGGIO ========== */
+
+.main-nav-linguaggio {
+    display: flex;
+    gap: 45px;
+}
+
+.main-nav-linguaggio a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.main-nav-linguaggio a:hover {
+    opacity: 0.7;
+}
+
+.hero-linguaggio {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_sezione_linguaggio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.linguaggio-titolo h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.linguaggio-sottotitolo {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+/* ========== DESCRIZIONE PAGINA LINGUAGGIO ========== */
+
+.linguaggio-descrizione {
+    width: 100%;
+    padding: 130px 0 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.linguaggio-contenitore {
+    width: 975px;
+}
+
+.linguaggio-testo-descrizione {
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
 }
