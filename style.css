@@ -14,14 +14,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     padding: 30px 50px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     z-index: 100;
 }
 
@@ -371,6 +368,48 @@ body {
     margin: 0;
 } 
 
+/* ========== AREA INFO LINGUAGGIO ========== */
+
+.linguaggio-info {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linguaggio-info-contenitore {
+    width: 1240px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 84px;
+}
+
+.linguaggio-info-blocco {
+    width: 400px;
+}
+
+.linguaggio-info-blocco h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #000000;
+    margin: 0 0 32px 0;
+    white-space: nowrap;
+}
+
+.linguaggio-info-blocco p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0;
+}
+
 /* ========== SEZIONE COLORI ========== */
 .sezione-colori {
     width: 100%;
@@ -400,6 +439,7 @@ body {
 }
 
 /* ========== GRIGLIA CARD ========== */
+
 .griglia-colori {
     width: fit-content;
     margin: 0 auto;
@@ -409,7 +449,10 @@ body {
 }
 
 /* ========== CARD ========== */
+
 .card-colore {
+    position: relative;
+    overflow: hidden;
     width: 223px;
     height: 219px;
     background-color: #ffffff;
@@ -421,16 +464,38 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    transition: transform 0.3s ease;
 }
 
-/* contenitore dei due rettangoli colorati */
+/* ========== OVERLAY CARD COLORI ========== */
+
+.card-colore::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.card-colore:hover::after {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* ========== HOVER CARD COLORI ========== */
+
+.card-colore:hover {
+    transform: translateY(-5px);
+}
+
 .area-colore {
     position: relative;
+    z-index: 1;
     width: 192px;
     height: 151px;
 }
 
-/* rettangolo scuro dietro */
 .colore-scuro {
     position: absolute;
     top: 0;
@@ -440,7 +505,6 @@ body {
     border-radius: 15px;
 }
 
-/* rettangolo chiaro sopra */
 .colore-chiaro {
     position: absolute;
     top: 0;
@@ -450,8 +514,9 @@ body {
     border-radius: 15px;
 }
 
-/* testo della card */
 .card-colore p {
+    position: relative;
+    z-index: 1;
     width: 192px;
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
