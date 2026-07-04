@@ -352,7 +352,7 @@ body {
 
 .linguaggio-descrizione {
     width: 100%;
-    padding: 130px 0 190px;
+    padding: 190px 0 190px;
     display: flex;
     justify-content: center;
 }
@@ -371,3 +371,402 @@ body {
     margin: 0;
 } 
 
+/* ========== SEZIONE COLORI ========== */
+.sezione-colori {
+    width: 100%;
+    padding: 140px 0 220px;
+    background-color: #ffffff;
+}
+
+.titolo-colori {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.titolo-colori h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 10px;
+}
+
+.titolo-colori p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ========== GRIGLIA CARD ========== */
+.griglia-colori {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 223.84px);
+    gap: 50px;
+}
+
+/* ========== CARD ========== */
+.card-colore {
+    width: 223px;
+    height: 219px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* contenitore dei due rettangoli colorati */
+.area-colore {
+    position: relative;
+    width: 192px;
+    height: 151px;
+}
+
+/* rettangolo scuro dietro */
+.colore-scuro {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 185px;
+    height: 151px;
+    border-radius: 15px;
+}
+
+/* rettangolo chiaro sopra */
+.colore-chiaro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 181px;
+    height: 151px;
+    border-radius: 15px;
+}
+
+/* testo della card */
+.card-colore p {
+    width: 192px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin: 12px 0 0;
+    text-align: left;
+}
+
+/* ========== COLORI SINGOLI DELLE CARD ========== */
+.card-rosso .colore-chiaro {
+    background-color: #FF0000;
+}
+
+.card-rosso .colore-scuro {
+    background-color: #BF0000;
+}
+
+
+.card-giallo .colore-chiaro {
+    background-color: #FFFF00;
+}
+
+.card-giallo .colore-scuro {
+    background-color: #ECEC04; 
+}
+
+
+.card-blu .colore-chiaro {
+    background-color: #0000FF;
+}
+
+.card-blu .colore-scuro {
+    background-color: #0202B5;
+}
+
+
+.card-verde .colore-chiaro {
+    background-color: #00FF00;
+}
+
+.card-verde .colore-scuro {
+    background-color: #00CB00;
+}
+
+
+.card-viola .colore-chiaro {
+    background-color: #8000FF;
+}
+
+.card-viola .colore-scuro {
+    background-color: #6700CE;
+}
+
+
+.card-arancione .colore-chiaro {
+    background-color: #FFA500;
+}
+
+.card-arancione .colore-scuro {
+    background-color: #D28800;
+}
+
+
+.card-nero .colore-chiaro {
+    background-color: #000000;
+}
+
+.card-nero .colore-scuro {
+    background-color: #464646;
+}
+
+
+.card-bianco .colore-chiaro {
+    background-color: #FFFFFF;
+}
+
+.card-bianco .colore-scuro {
+    background-color: #EDEDED;
+}
+
+
+.card-grigio .colore-chiaro {
+    background-color: #BFBFBF;
+}
+
+.card-grigio .colore-scuro {
+    background-color: #989797;
+}
+
+/* ========== FOOTER SEZIONE LINGUAGGIO ========== */
+.footer-sito {
+    width: 100%;
+    background-color: #272626;
+    padding: 55px 0 45px;
+}
+
+.footer-contenitore {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-marchio-sito {
+    font-family: "Yeseva One", serif;
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 65px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 145px;
+    margin-bottom: 32px;
+}
+
+.footer-link ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+.footer-link li {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.footer-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* ========== HERO INFO SUL PROGETTO ========== */
+
+.hero-info {
+    width: 100%;
+    height: 710px;
+    background-image: url("img/hero_info_sul_progetto.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-info h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0;
+    padding-left: 38px;
+}
+
+/* ========== PAGINA INFO SUL PROGETTO ========== */
+
+.hero-info-progetto {
+    width: 100%;
+    height: 800px;
+    background-image: url("immagini/hero_info_sul_progetto.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-info-testo {
+    width: 100%;
+    color: #ffffff;
+}
+
+.hero-info-testo h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+/* ========== CONTENUTO INFO SUL PROGETTO ========== */
+.pagina-info-progetto {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 160px 0 170px;
+}
+
+.contenitore-info-progetto {
+    width: 780px;
+    margin-left: 100px;
+}
+
+.blocco-info-progetto {
+    margin-bottom: 38px;
+}
+
+.blocco-info-progetto h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.blocco-info-progetto p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+/* ========== PAGINA BIBLIOGRAFIA ========== */
+
+/* HERO BIBLIOGRAFIA */
+
+.hero-bibliografia {
+    width: 100%;
+    height: 800px;
+    background-image: url("immagini/hero_bibliografia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-bibliografia-testo {
+    width: 100%;
+    color: #ffffff;
+}
+
+.hero-bibliografia-testo h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+/* CONTENUTO BIBLIOGRAFIA */
+
+.pagina-bibliografia {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 160px 0 260px;
+}
+
+.contenitore-bibliografia {
+    width: 900px;
+    margin-left: 100px;
+}
+
+.introduzione-bibliografia {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #000000;
+    margin-bottom: 90px;
+}
+
+.blocco-bibliografia {
+    margin-bottom: 38px;
+}
+
+.blocco-bibliografia h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.blocco-bibliografia ul {
+    padding-left: 26px;
+    margin: 0;
+}
+
+.blocco-bibliografia li {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.blocco-bibliografia a {
+    color: #000000;
+    text-decoration: underline;
+}
