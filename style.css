@@ -439,7 +439,6 @@ body {
 }
 
 /* ========== GRIGLIA CARD ========== */
-
 .griglia-colori {
     width: fit-content;
     margin: 0 auto;
@@ -449,7 +448,6 @@ body {
 }
 
 /* ========== CARD ========== */
-
 .card-colore {
     position: relative;
     overflow: hidden;
@@ -468,13 +466,12 @@ body {
 }
 
 /* ========== OVERLAY CARD COLORI ========== */
-
 .card-colore::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0);
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
     z-index: 2;
     pointer-events: none;
 }
@@ -484,7 +481,6 @@ body {
 }
 
 /* ========== HOVER CARD COLORI ========== */
-
 .card-colore:hover {
     transform: translateY(-5px);
 }
