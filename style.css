@@ -534,7 +534,6 @@ body {
     background-color: #BF0000;
 }
 
-
 .card-giallo .colore-chiaro {
     background-color: #FFFF00;
 }
@@ -542,7 +541,6 @@ body {
 .card-giallo .colore-scuro {
     background-color: #ECEC04; 
 }
-
 
 .card-blu .colore-chiaro {
     background-color: #0000FF;
@@ -552,7 +550,6 @@ body {
     background-color: #0202B5;
 }
 
-
 .card-verde .colore-chiaro {
     background-color: #00FF00;
 }
@@ -560,7 +557,6 @@ body {
 .card-verde .colore-scuro {
     background-color: #00CB00;
 }
-
 
 .card-viola .colore-chiaro {
     background-color: #8000FF;
@@ -570,7 +566,6 @@ body {
     background-color: #6700CE;
 }
 
-
 .card-arancione .colore-chiaro {
     background-color: #FFA500;
 }
@@ -578,7 +573,6 @@ body {
 .card-arancione .colore-scuro {
     background-color: #D28800;
 }
-
 
 .card-nero .colore-chiaro {
     background-color: #000000;
@@ -588,7 +582,6 @@ body {
     background-color: #464646;
 }
 
-
 .card-bianco .colore-chiaro {
     background-color: #FFFFFF;
 }
@@ -596,7 +589,6 @@ body {
 .card-bianco .colore-scuro {
     background-color: #EDEDED;
 }
-
 
 .card-grigio .colore-chiaro {
     background-color: #BFBFBF;
