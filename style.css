@@ -693,8 +693,8 @@ body {
     color: #ffffff;
 }
 
-
 /* ========== CONTENUTO INFO SUL PROGETTO ========== */
+
 .pagina-info-progetto {
     width: 100%;
     background-color: #ffffff;
@@ -702,12 +702,18 @@ body {
 }
 
 .contenitore-info-progetto {
-    width: 780px;
+    width: 756px;
     margin-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
 }
 
 .blocco-info-progetto {
-    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .blocco-info-progetto h2 {
@@ -716,7 +722,19 @@ body {
     font-weight: 600;
     line-height: 1.15;
     color: #000000;
-    margin-bottom: 14px;
+    margin: 0;
+}
+
+.testo-blocco-info-progetto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gruppo-sottoparagrafo-blocco-info-progetto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .blocco-info-progetto p {
@@ -725,7 +743,7 @@ body {
     font-weight: 400;
     line-height: 1.35;
     color: #000000;
-    margin-bottom: 32px;
+    margin: 0;
 }
 
 /* ========== PAGINA BIBLIOGRAFIA ========== */
