@@ -391,6 +391,9 @@ body {
 
 .linguaggio-info-blocco {
     width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .linguaggio-info-blocco h2 {
@@ -399,7 +402,7 @@ body {
     font-weight: 600;
     line-height: 1.1;
     color: #000000;
-    margin: 0 0 32px 0;
+    margin: 0;
     white-space: nowrap;
 }
 
@@ -418,11 +421,17 @@ body {
     width: 100%;
     padding: 140px 0 220px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
 }
 
 .titolo-colori {
     text-align: center;
-    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .titolo-colori h2 {
@@ -430,7 +439,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     color: #000000;
-    margin: 0 0 10px;
+    margin: 0;
 }
 
 .titolo-colori p {
@@ -446,7 +455,7 @@ body {
     width: fit-content;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 223.84px);
+    grid-template-columns: repeat(3, 223px);
     gap: 50px;
 }
 
@@ -464,6 +473,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
     padding-top: 20px;
     transition: transform 0.3s ease;
 }
@@ -480,7 +490,7 @@ body {
 }
 
 .card-colore:hover::after {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.15);
 }
 
 /* ========== HOVER CARD COLORI ========== */
@@ -521,7 +531,7 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: #000000;
-    margin: 12px 0 0;
+    margin: 0;
     text-align: left;
 }
 
