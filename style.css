@@ -335,6 +335,10 @@ body {
     color: #ffffff;
 }
 
+.linguaggio-titolo h1 span {
+    display: block;
+}
+
 .linguaggio-sottotitolo {
     font-family: "DM Sans", sans-serif;
     font-size: 32px;
@@ -386,7 +390,7 @@ body {
 }
 
 .linguaggio-info-blocco {
-    width: 400px;
+    width: 350px;
 }
 
 .linguaggio-info-blocco h2 {
@@ -400,6 +404,7 @@ body {
 }
 
 .linguaggio-info-blocco p {
+    width: 335px;
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
