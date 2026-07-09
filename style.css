@@ -777,18 +777,19 @@ body {
     color: #ffffff;
 }
 
-
 /* CONTENUTO BIBLIOGRAFIA */
-
 .pagina-bibliografia {
     width: 100%;
     background-color: #ffffff;
-    padding: 160px 0 260px;
+    padding: 160px 0 300px;
 }
 
 .contenitore-bibliografia {
     width: 900px;
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .introduzione-bibliografia {
@@ -797,11 +798,13 @@ body {
     font-weight: 400;
     line-height: 1.35;
     color: #000000;
-    margin-bottom: 90px;
+    margin: 0;
 }
 
-.blocco-bibliografia {
-    margin-bottom: 38px;
+.gruppo-blocco-bibliografia {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .blocco-bibliografia h2 {
@@ -810,7 +813,7 @@ body {
     font-weight: 600;
     line-height: 1.15;
     color: #000000;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 .blocco-bibliografia ul {
