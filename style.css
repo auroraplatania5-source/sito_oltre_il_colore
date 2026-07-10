@@ -728,13 +728,13 @@ body {
 .testo-blocco-info-progetto {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
 .gruppo-sottoparagrafo-blocco-info-progetto {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
 .blocco-info-progetto p {
