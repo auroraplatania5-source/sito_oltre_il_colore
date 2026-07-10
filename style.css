@@ -649,7 +649,6 @@
 .contenitore-info-progetto {
     width: 756px;
     margin-left: 100px;
-
     display: flex;
     flex-direction: column;
     gap: 38px;
