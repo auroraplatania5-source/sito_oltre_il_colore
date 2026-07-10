@@ -350,10 +350,11 @@
 /* ========== DESCRIZIONE PAGINA LINGUAGGIO ========== */
 
 .linguaggio-descrizione {
-    width: 100%;
-    padding: 190px 0 190px;
     display: flex;
     justify-content: center;
+    max-width: 800px;
+    margin: 190px auto;
+    padding: 0 32px;
 }
 
 .linguaggio-contenitore {
@@ -382,11 +383,12 @@
 }
 
 .linguaggio-info-contenitore {
-    width: 1220px;
-    display: flex;
+    max-width: 1220px;
     justify-content: center;
-    align-items: flex-start;
     gap: 84px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .linguaggio-info-blocco {
