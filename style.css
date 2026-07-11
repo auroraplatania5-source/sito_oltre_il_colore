@@ -390,10 +390,13 @@ body {
 }
 
 .linguaggio-testo-descrizione {
+    width: 100%;
     font-family: var(--font-sans);
     font-size: var(--testo-base);
     font-weight: 500;
     line-height: 1.5;
+    color: #000000;
+    margin: 0;
 }
 
 .linguaggio-contenitore {
@@ -402,16 +405,6 @@ body {
     flex-direction: column;
     gap: 10px;
 }
-
-.linguaggio-testo-descrizione {
-    width: 100%;
-    font-family: "DM Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-} 
 
 /* ========== AREA INFO LINGUAGGIO ========== */
 
@@ -634,32 +627,308 @@ body {
     background-color: var(--colore-scuro);
 }
 
-/* ========== PAGINA INFO SUL PROGETTO ========== */
-.hero-info-progetto {
+/* ========== PAGINA PERCEZIONE ========== */
+.header-sito {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 800px;
-    background-image: url("immagini/hero_info_sul_progetto.png");
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.nome-sito {
+    font-family: var(--font-titoli);
+    font-size: var(--marchio-header);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    gap: 45px;
+}
+
+.main-nav a {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    opacity: 0.7;
+}
+
+.hero-percezione { 
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero\ image\ percezione.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
     padding: 0 50px;
 }
 
-.hero-info-testo {
-    width: 100%;
+.percezione-titolo {
     color: #ffffff;
+    width: 100%;
 }
 
-.hero-info-testo h1 {
-    font-family: "Yeseva One", serif;
-    font-size: 72px;
+.percezione-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
     font-weight: 400;
     line-height: 1.1;
-    letter-spacing: 2px;
-    color: #ffffff;
+}
+
+.percezione-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+}
+
+/* ========== TESTO DESCRIZIONE ========== */
+.percezione-contenitore {
+    max-width: 875px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 190px auto 0;
+    padding: 0 32px;
+}
+
+.percezione-testo-descrizione {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+/* ========== ESPERIMENTO DEL PRISMA ========== */
+.percezione-esperimento {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.percezione-esperimento-contenitore {
+    max-width: 1220px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 32px;
+}
+
+.percezione-esperimento-testo {
+    max-width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.percezione-esperimento-titolo h2 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione); 
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.percezione-esperimento-testo-gruppo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.percezione-esperimento-testo-gruppo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.percezione-esperimento-immagine {
+    max-width: 480px;
+    width: 100%;
+}
+
+.percezione-esperimento-immagine img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========== SPETTRO VISIBILE ========== */
+.percezione-spettro {
+    width: 100%;
+    padding: 120px 0 120px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.percezione-spettro-contenitore {
+    max-width: 1175px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 32px;
+}
+
+.percezione-spettro-immagine {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.percezione-spettro-testo {
+    max-width: 535px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.percezione-spettro-testo h2 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione); 
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.percezione-spettro-testo-gruppo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.percezione-spettro-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+/* ========== VISIONE UMANA ========== */
+.percezione-visione {
+    width: 100%;
+    padding: 140px 0 140px 40px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.percezione-visione-contenitore {
+    max-width: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
+}
+
+.percezione-visione-contenitore h2 {
+    font-family: var(--font-sans); 
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.percezione-visione-testo-gruppo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.percezione-visione-testo-gruppo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.percezione-processo {
+    width: 100%;
+    padding: 0 0 160px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.percezione-processo-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.percezione-processo-griglia {
+    max-width: 1220px;
+    display: grid;
+    grid-template-columns: repeat(3, 356px);
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.percezione-processo-card {
+    width: 356px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.percezione-processo-foto {
+    width: 356px;
+    height: 153px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    object-fit: contain;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.percezione-processo-card p {
+    font-family: var(--font-sans); 
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+    text-wrap: pretty; 
 }
 
 /* ========== CONTENUTO INFO SUL PROGETTO ========== */
