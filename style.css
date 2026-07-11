@@ -5,8 +5,29 @@
     box-sizing: border-box;
 }
 
-.body {
-    font-family: "DM Sans", sans-serif;
+:root {
+    --font-sans: "DM Sans", sans-serif;
+    --font-titoli: "Yeseva One", serif;
+
+    --testo-base: clamp(17px, 2vw, 20px);
+    --citazione: clamp(22px, 2.5vw, 30px);
+    --sottotitolo: clamp(24px, 3vw, 32px);
+    --titolo-sezione: clamp(26px, 3vw, 32px);
+    --titolo-hero: clamp(42px, 5vw, 72px);
+
+    --titolo-card-grande: clamp(22px, 2.4vw, 28px);
+    --titolo-card-piccola: clamp(18px, 2vw, 22px);
+
+    --marchio-header: clamp(18px, 2vw, 22px);
+    --link-nav: clamp(16px, 1.6vw, 18px);
+
+    --footer-marchio: clamp(18px, 2vw, 22px);
+    --footer-link: clamp(16px, 1.6vw, 18px);
+    --footer-copyright: clamp(14px, 1.4vw, 16px);
+}
+
+body {
+    font-family: var(--font-sans);
     background-color: #ffffff;
 }
 
@@ -23,8 +44,8 @@
 }
 
 .nome-sito {
-    font-family: "Yeseva One", serif;
-    font-size: 22px;
+    font-family: var(--font-titoli);
+    font-size: var(--marchio-header);
     color: #ffffff;
     text-decoration: none;
 }
@@ -35,8 +56,8 @@
 }
 
 .main-nav a {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
@@ -65,17 +86,16 @@
 }
 
 .hero-testo h1 {
-    font-family: "Yeseva One", serif;
-    font-size: 72px;
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
     font-weight: 400;
     line-height: 1.1;
 }
 
 .sottotitolo {
-    font-family: "DM Sans", sans-serif;
-    font-size: 32px;
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
     font-weight: 500;
-    white-space: nowrap;
 }
 
 /* ========== DESCRIZIONE SITO ========== */
@@ -83,56 +103,64 @@
 .descrizione {
     width: 100%;
     background-color: #ffffff;
-    padding: 130px 0 190px;
+    padding: 130px 50px 190px;
 }
 
 .contenitore {
-    width: 750px;
-    margin-left: 320px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .testo-descrizione {
     width: 100%;
-    font-family: "DM Sans", sans-serif;
-    font-size: 20px;
+    max-width: 750px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
     font-weight: 500;
     line-height: 1.5;
 }
 
 .citazione {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     font-family: "DM Sans", sans-serif;
-    font-size: 30px;
+    font-size: var(--citazione);
     font-weight: 800;
     font-style: italic;
     line-height: 1.25;
     color: #000000;
-    margin-top: 50px;
+    margin: 40px 0 0;
 }
 
 .autore {
     font-family: "DM Sans", sans-serif;
-    font-size: 30px;
+    font-size: var(--citazione);
     font-weight: 800;
     font-style: italic;
     color: #000000;
+    margin: 0;
 }
 
 /* ========== CARD IN EVIDENZA ========== */
 
 .contenuti {
     width: 100%;
-    padding: 120px 0 180px;
+    padding: 120px 50px 180px;
 }
 
 .contenitore-card {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     margin: 0 auto;
 }
 
 .contenitore-card h2 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 32px;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
     font-weight: 600;
     color: #000000;
     margin-bottom: 60px;
@@ -147,12 +175,12 @@
 .card-principale {
     position: relative;
     display: block;
-    width: 980px;
+    width: 100%;
     height: 350px;
     overflow: hidden;
     border-radius: 30px;
     text-decoration: none;
-    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
@@ -197,8 +225,8 @@
     top: 14px;
     left: 28px;
     margin: 0;
-    font-family: "DM Sans", sans-serif;
-    font-size: 28px;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-grande);
     font-weight: 500;
     color: #ffffff;
     z-index: 3;
@@ -209,8 +237,8 @@
     top: 14px;
     left: 22px;
     margin: 0;
-    font-family: "DM Sans", sans-serif;
-    font-size: 22px;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-piccola);
     font-weight: 500;
     color: #ffffff;
     z-index: 3;
@@ -242,18 +270,19 @@
 .footer-sito {
     width: 100%;
     background-color: #272626;
-    padding: 55px 0 45px;
+    padding: 55px 50px 45px;
 }
 
 .footer-contenitore {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     margin: 0 auto;
     text-align: center;
 }
 
 .footer-marchio-sito {
-    font-family: "Yeseva One", serif;
-    font-size: 22px;
+    font-family: var(--font-titoli);
+    font-size: var(--footer-marchio);
     color: #ffffff;
     margin-bottom: 65px;
 }
@@ -261,8 +290,9 @@
 .footer-link {
     display: flex;
     justify-content: center;
-    gap: 145px;
-    margin-bottom: 32px;
+    gap: clamp(30px, 8vw, 145px);
+    flex-wrap: wrap;
+    margin: 0 0 32px;
 }
 
 .footer-link ul {
@@ -271,8 +301,8 @@
 }
 
 .footer-link li {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
+    font-family: var(--font-sans);
+    font-size: var(--footer-link);
     font-weight: 400;
     color: #ffffff;
     line-height: 1.5;
@@ -288,11 +318,14 @@
 }
 
 .copyright {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
+    width: 100%;
+    font-family: var(--font-sans);
+    font-size: var(--footer-copyright);
     font-weight: 400;
     color: #ffffff;
 }
+
+
 
 /* ========== SEZIONE IL COLORE COME LINGUAGGIO VISIVO ========== */
 /* ========== HEADER PAGINA LINGUAGGIO ========== */
@@ -340,10 +373,9 @@
 }
 
 .linguaggio-sottotitolo {
-    font-family: "DM Sans", sans-serif;
-    font-size: 32px;
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
     font-weight: 500;
-    white-space: nowrap;
     color: #ffffff;
 }
 
@@ -357,8 +389,18 @@
     padding: 0 32px;
 }
 
+.linguaggio-testo-descrizione {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 .linguaggio-contenitore {
     width: 975px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .linguaggio-testo-descrizione {
@@ -537,82 +579,62 @@
     text-align: left;
 }
 
-/* ========== COLORI SINGOLI DELLE CARD ========== */
-.card-rosso .colore-chiaro {
-    background-color: #FF0000;
+/* ========== COLORI DELLE CARD ========== */
+.card-rosso {
+    --colore-chiaro: #FF0000;
+    --colore-scuro: #BF0000;
 }
 
-.card-rosso .colore-scuro {
-    background-color: #BF0000;
+.card-giallo {
+    --colore-chiaro: #FFFF00;
+    --colore-scuro: #ECEC04;
 }
 
-.card-giallo .colore-chiaro {
-    background-color: #FFFF00;
+.card-blu {
+    --colore-chiaro: #0000FF;
+    --colore-scuro: #0202B5;
 }
 
-.card-giallo .colore-scuro {
-    background-color: #ECEC04; 
+.card-verde {
+    --colore-chiaro: #00FF00;
+    --colore-scuro: #00CB00;
 }
 
-.card-blu .colore-chiaro {
-    background-color: #0000FF;
+.card-viola {
+    --colore-chiaro: #8000FF;
+    --colore-scuro: #6700CE;
 }
 
-.card-blu .colore-scuro {
-    background-color: #0202B5;
+.card-arancione {
+    --colore-chiaro: #FFA500;
+    --colore-scuro: #D28800;
 }
 
-.card-verde .colore-chiaro {
-    background-color: #00FF00;
+.card-nero {
+    --colore-chiaro: #000000;
+    --colore-scuro: #464646;
 }
 
-.card-verde .colore-scuro {
-    background-color: #00CB00;
+.card-bianco {
+    --colore-chiaro: #FFFFFF;
+    --colore-scuro: #EDEDED;
 }
 
-.card-viola .colore-chiaro {
-    background-color: #8000FF;
+.card-grigio {
+    --colore-chiaro: #BFBFBF;
+    --colore-scuro: #989797;
 }
 
-.card-viola .colore-scuro {
-    background-color: #6700CE;
+/* ========== APPLICAZIONE DEI COLORI ========== */
+.card-colore .colore-chiaro {
+    background-color: var(--colore-chiaro);
 }
 
-.card-arancione .colore-chiaro {
-    background-color: #FFA500;
+.card-colore .colore-scuro {
+    background-color: var(--colore-scuro);
 }
-
-.card-arancione .colore-scuro {
-    background-color: #D28800;
-}
-
-.card-nero .colore-chiaro {
-    background-color: #000000;
-}
-
-.card-nero .colore-scuro {
-    background-color: #464646;
-}
-
-.card-bianco .colore-chiaro {
-    background-color: #FFFFFF;
-}
-
-.card-bianco .colore-scuro {
-    background-color: #EDEDED;
-}
-
-.card-grigio .colore-chiaro {
-    background-color: #BFBFBF;
-}
-
-.card-grigio .colore-scuro {
-    background-color: #989797;
-}
-
 
 /* ========== PAGINA INFO SUL PROGETTO ========== */
-
 .hero-info-progetto {
     width: 100%;
     height: 800px;
@@ -703,7 +725,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
     padding: 0 50px;
@@ -780,3 +801,155 @@
     text-decoration: underline;
 }
 
+/* ========== RESPONSIVE SCHERMI PICCOLI ========== */
+
+@media screen and (max-width: 800px) {
+
+    /* ========== HEADER E NAVIGAZIONE ========== */
+
+    .header-sito {
+        padding: 22px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 20px;
+    }
+
+    .main-nav a {
+        text-align: center;
+    }
+
+    /* ========== HERO ========== */
+
+    .hero {
+        height: auto;
+        min-height: 680px;
+        padding: 160px 24px 70px;
+        background-position: center;
+        align-items: center;
+    }
+
+    .hero-testo {
+        width: 100%;
+    }
+
+    .hero-testo h1 {
+        line-height: 1.05;
+    }
+
+    .sottotitolo {
+        width: 100%;
+        max-width: 520px;
+        white-space: normal;
+        line-height: 1.25;
+        margin-top: 10px;
+    }
+
+    /* ========== DESCRIZIONE E CITAZIONE ========== */
+
+    .descrizione {
+        padding: 80px 24px 100px;
+    }
+
+    .contenitore {
+        width: 100%;
+        max-width: none;
+    }
+
+    .testo-descrizione {
+        width: 100%;
+        max-width: none;
+    }
+
+    .citazione {
+        width: 100%;
+        max-width: none;
+        margin-top: 30px;
+    }
+
+    /* ========== CONTENUTI IN EVIDENZA ========== */
+
+    .contenuti {
+        padding: 80px 24px 100px;
+    }
+
+    .contenitore-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .contenitore-card h2 {
+        margin-bottom: 40px;
+    }
+
+    .griglia-card {
+        gap: 30px;
+    }
+
+    /* CARD PRINCIPALE */
+
+    .card-principale {
+        width: 100%;
+        height: 270px;
+    }
+
+    .card-principale h3 {
+        top: 14px;
+        left: 18px;
+        right: 18px;
+    }
+
+    .card-secondarie {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .card-piccola {
+        width: clamp(160px, 40vw, 200px);
+        height: auto;
+    }
+
+    .card-piccola h4 {
+        top: 12px;
+        left: 14px;
+        right: 14px;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer-sito {
+        padding: 45px 24px 35px;
+    }
+
+    .footer-marchio-sito {
+        margin-bottom: 40px;
+    }
+
+    .footer-link {
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        gap: 30px;
+        margin: 0 auto 32px;
+    }
+
+    .footer-link ul {
+        margin: 0;
+        padding-left: 20px;
+        list-style-position: outside;
+        text-align: left;
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
