@@ -1272,7 +1272,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 366px);
     justify-content: space-between;
-    gap: 48px;
+    gap: 45px;
     padding: 0 32px;
     box-sizing: border-box;
 }
@@ -1340,7 +1340,7 @@ body {
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 32px 100px;
+    padding: 0px 0px 100px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
