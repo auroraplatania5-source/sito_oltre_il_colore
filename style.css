@@ -1202,7 +1202,7 @@ body {
 }
 
 .rosso-campione-magenta {
-    background-color: #EC008C;
+    background-color: #EF0086;
 }
 
 .rosso-campione-giallo {
@@ -1675,13 +1675,311 @@ body {
     font-size: 20px;
 }
 
+/* ========== PAGINA COLORE BLU ========== */
+/* HERO BLU */
+.blu-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_blu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
 
+.blu-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
 
+.blu-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
 
+.blu-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+}
 
+/* IMPATTO / ASSOCIAZIONI / USO */
+.blu-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
 
+.blu-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
 
+.blu-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
 
+.blu-info-testo {
+    max-width: 550px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+.blu-info-testo-riga-gap {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+/* CODICI COLORE */
+.blu-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.blu-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.blu-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.blu-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.blu-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.blu-campione-pieno {
+    background-color: #0000FF;
+}
+
+.blu-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.blu-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.blu-campione-blu {
+    background-color: #0000FF;
+}
+
+.blu-campione-magenta {
+    background-color: #EF0086;
+}
+
+.blu-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.blu-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.blu-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.blu-codice-info p {
+    font-family: var(--font-sans);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.blu-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.blu-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.blu-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.blu-esempio-card {
+    max-width: 366px;
+    width: 100%;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.blu-esempio-testo {
+    width: 210px;
+    height: 140px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.blu-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.blu-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.blu-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blu-esempio-immagine img {
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.blu-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blu-percorso-prev,
+.blu-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.blu-percorso-prev:hover,
+.blu-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.blu-percorso-freccia {
+    font-size: 20px;
+}
 
 
 
