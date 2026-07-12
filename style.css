@@ -89,7 +89,6 @@ body {
     font-family: var(--font-titoli);
     font-size: var(--titolo-hero);
     font-weight: 400;
-    line-height: 1.1;
 }
 
 .sottotitolo {
@@ -364,7 +363,6 @@ body {
     font-family: "Yeseva One", serif;
     font-size: 72px;
     font-weight: 400;
-    line-height: 1.1;
     color: #ffffff;
 }
 
@@ -628,43 +626,6 @@ body {
 }
 
 /* ========== PAGINA PERCEZIONE ========== */
-.header-sito {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.nome-sito {
-    font-family: var(--font-titoli);
-    font-size: var(--marchio-header);
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.main-nav {
-    display: flex;
-    gap: 45px;
-}
-
-.main-nav a {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.main-nav a:hover {
-    opacity: 0.7;
-}
-
 .hero-percezione { 
     width: 100%;
     height: 900px;
@@ -931,7 +892,33 @@ body {
     text-wrap: pretty; 
 }
 
-/* ========== CONTENUTO INFO SUL PROGETTO ========== */
+/* ========== INFO SUL PROGETTO ========== */
+.hero-info-progetto {
+    width: 100%;
+    height: 800px;
+    background-image: url("immagini/hero_bibliografia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-info-testo {
+    width: 100%;
+    color: #ffffff;
+}
+
+.hero-info-testo h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
 .pagina-info-progetto {
     width: 100%;
     background-color: #ffffff;
@@ -984,7 +971,6 @@ body {
 
 /* ========== PAGINA BIBLIOGRAFIA ========== */
 /* HERO BIBLIOGRAFIA */
-
 .hero-bibliografia {
     width: 100%;
     height: 800px;
@@ -1187,7 +1173,7 @@ body {
     gap: 12px;
 }
 
-.rosso-codice-swatch {
+.rosso-codice-campione {
     width: 60px;
     height: 60px;
     border-radius: 15px;
@@ -1195,31 +1181,31 @@ body {
     overflow: hidden;
 }
 
-.rosso-swatch-pieno {
+.rosso-campione-pieno {
     background-color: #FF0000;
 }
 
-.rosso-swatch-cmyk {
+.rosso-campione-cmyk {
     display: flex;
     flex-direction: column;
     gap: 5.12px;
 }
 
-.rosso-swatch-barra {
+.rosso-campione-barra {
     width: 60px;
     height: 10px;
     border-radius: 15px;
 }
 
-.rosso-swatch-grigio {
+.rosso-campione-grigio {
     background-color: #F0EFEF;
 }
 
-.rosso-swatch-magenta {
+.rosso-campione-magenta {
     background-color: #EC008C;
 }
 
-.rosso-swatch-giallo {
+.rosso-campione-giallo {
     background-color: #FFF200;
 }
 
@@ -1368,6 +1354,337 @@ body {
 .rosso-percorso-freccia {
     font-size: 20px;
 }
+
+/* ========== PAGINA COLORE GIALLO ========== */
+/* HERO GIALLO */
+.giallo-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_giallo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.giallo-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.giallo-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
+
+.giallo-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* IMPATTO / ASSOCIAZIONI / USO */
+.giallo-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.giallo-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.giallo-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.giallo-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.giallo-info-testo-riga-gap {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+/* CODICI COLORE */
+.giallo-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.giallo-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.giallo-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.giallo-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.giallo-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.giallo-campione-pieno {
+    background-color: #FFFF00;
+}
+
+.giallo-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.giallo-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.giallo-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.giallo-campione-giallo {
+    background-color: #FFF200;
+}
+
+.giallo-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.giallo-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.giallo-codice-info p {
+    font-family: var(--font-sans);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.giallo-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.giallo-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.giallo-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.giallo-esempio-card {
+    max-width: 366px;
+    width: 100%;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.giallo-esempio-testo {
+    width: 185px;
+    height: 83px;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.giallo-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.giallo-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.giallo-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.giallo-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.giallo-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.giallo-esempio-immagine img {
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.giallo-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.giallo-percorso-prev,
+.giallo-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.giallo-percorso-prev:hover,
+.giallo-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.giallo-percorso-freccia {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========== RESPONSIVE SCHERMI PICCOLI ========== */
 
