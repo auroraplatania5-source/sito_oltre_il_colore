@@ -932,7 +932,6 @@ body {
 }
 
 /* ========== CONTENUTO INFO SUL PROGETTO ========== */
-
 .pagina-info-progetto {
     width: 100%;
     background-color: #ffffff;
@@ -984,7 +983,6 @@ body {
 }
 
 /* ========== PAGINA BIBLIOGRAFIA ========== */
-
 /* HERO BIBLIOGRAFIA */
 
 .hero-bibliografia {
@@ -1068,6 +1066,307 @@ body {
 .blocco-bibliografia a {
     color: #000000;
     text-decoration: underline;
+}
+
+/* ========== PAGINA COLORE ROSSO ========== */
+/* HERO ROSSO */
+.rosso-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_rosso.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.rosso-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rosso-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.rosso-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* IMPATTO / ASSOCIAZIONI / USO */
+.rosso-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.rosso-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.rosso-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.rosso-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+/* CODICI COLORE */
+.rosso-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.rosso-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.rosso-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.rosso-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rosso-codice-swatch {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.rosso-swatch-pieno {
+    background-color: #FF0000;
+}
+
+.rosso-swatch-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.rosso-swatch-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.rosso-swatch-grigio {
+    background-color: #F0EFEF;
+}
+
+.rosso-swatch-magenta {
+    background-color: #EC008C;
+}
+
+.rosso-swatch-giallo {
+    background-color: #FFF200;
+}
+
+.rosso-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rosso-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.rosso-codice-info p {
+    font-family: var(--font-sans);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.rosso-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.rosso-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.rosso-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 48px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.rosso-esempio-card {
+    max-width: 366px;
+    width: 100%;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.rosso-esempio-testo {
+    width: 175px;
+    height: 138px;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.rosso-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.rosso-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.rosso-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rosso-esempio-immagine img {
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.rosso-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 32px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rosso-percorso-prev,
+.rosso-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.rosso-percorso-prev:hover,
+.rosso-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.rosso-percorso-freccia {
+    font-size: 20px;
 }
 
 /* ========== RESPONSIVE SCHERMI PICCOLI ========== */
