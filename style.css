@@ -14,9 +14,12 @@
     --sottotitolo: clamp(24px, 3vw, 32px);
     --titolo-sezione: clamp(26px, 3vw, 32px);
     --titolo-hero: clamp(42px, 5vw, 72px);
+    
 
     --titolo-card-grande: clamp(22px, 2.4vw, 28px);
     --titolo-card-piccola: clamp(18px, 2vw, 22px);
+    --titolo-card-colori-esempi: clamp(17px, 2vw, 20px);
+    --didascalia-card-colori: clamp(17px, 2vw, 20px);
 
     --marchio-header: clamp(18px, 2vw, 22px);
     --link-nav: clamp(16px, 1.6vw, 18px);
@@ -1167,7 +1170,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
-    padding: 18px;
+    padding: 14px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1217,7 +1220,7 @@ body {
 
 .rosso-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori-esempi);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1225,7 +1228,7 @@ body {
 
 .rosso-codice-info p {
     font-family: var(--font-sans);
-    font-size: 18px;
+    font-size: var(--didascalia-card-colori);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1259,7 +1262,6 @@ body {
     grid-template-columns: repeat(3, 366px);
     justify-content: space-between;
     gap: 45px;
-    padding: 0 32px;
     box-sizing: border-box;
 }
 
@@ -1472,7 +1474,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
-    padding: 18px;
+    padding: 14px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1518,7 +1520,7 @@ body {
 
 .giallo-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori-esempi);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1526,7 +1528,7 @@ body {
 
 .giallo-codice-info p {
     font-family: var(--font-sans);
-    font-size: 18px;
+    font-size: var(--didascalia-card-colori);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1560,7 +1562,6 @@ body {
     grid-template-columns: repeat(3, 366px);
     justify-content: space-between;
     gap: 45px;
-    padding: 0 32px;
     box-sizing: border-box;
 }
 
@@ -1741,7 +1742,7 @@ body {
 }
 
 .blu-info-testo {
-    max-width: 550px;
+    max-width: 560px;
     font-family: var(--font-sans);
     font-size: var(--testo-base);
     font-weight: 400;
@@ -1793,7 +1794,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
-    padding: 18px;
+    padding: 14px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1824,7 +1825,7 @@ body {
 }
 
 .blu-campione-blu {
-    background-color: #0000FF;
+    background-color: #00A5E9;
 }
 
 .blu-campione-magenta {
@@ -1843,7 +1844,7 @@ body {
 
 .blu-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori-esempi);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1851,7 +1852,7 @@ body {
 
 .blu-codice-info p {
     font-family: var(--font-sans);
-    font-size: 18px;
+    font-size: var(--didascalia-card-colori);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1885,7 +1886,6 @@ body {
     grid-template-columns: repeat(3, 366px);
     justify-content: space-between;
     gap: 45px;
-    padding: 0 32px;
     box-sizing: border-box;
 }
 
@@ -1981,7 +1981,616 @@ body {
     font-size: 20px;
 }
 
+/* ========== PAGINA COLORE VERDE ========== */
+/* HERO VERDE */
+.verde-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_verde.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
 
+.verde-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.verde-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
+
+.verde-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* IMPATTO / ASSOCIAZIONI / USO */
+.verde-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.verde-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.verde-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.verde-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+.verde-info-testo-riga-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CODICI COLORE */
+.verde-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.verde-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.verde-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.verde-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.verde-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.verde-campione-pieno {
+    background-color: #00FF00;
+}
+
+.verde-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.verde-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.verde-campione-ciano {
+    background-color: #00A5E9;
+}
+
+.verde-campione-giallo {
+    background-color: #FEE506;
+}
+
+.verde-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.verde-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.verde-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori-esempi);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.verde-codice-info p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-colori);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.verde-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.verde-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.verde-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    box-sizing: border-box;
+}
+
+.verde-esempio-card {
+    max-width: 366px;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.verde-esempio-testo {
+    width: 190px;
+    height: 136px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.verde-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.verde-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.verde-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verde-esempio-immagine img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.verde-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 100px; /* AGGIUNTO: 32px ai lati, coerente con le altre sezioni */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verde-percorso-prev,
+.verde-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.verde-percorso-prev:hover,
+.verde-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.verde-percorso-freccia {
+    font-size: 20px;
+}
+
+/* ========== PAGINA COLORE VIOLA ========== */
+/* HERO VIOLA */
+.viola-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_viola.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.viola-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.viola-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
+
+.viola-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* IMPATTO / ASSOCIAZIONI / USO */
+.viola-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.viola-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.viola-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.viola-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+.viola-info-testo-riga {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CODICI COLORE */
+.viola-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.viola-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.viola-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.viola-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.viola-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.viola-campione-pieno {
+    background-color: #8000FF;
+}
+
+.viola-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.viola-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.viola-campione-ciano {
+    background-color: #00A5E9;
+    width: 50%;
+}
+
+.viola-campione-magenta {
+    background-color: #EF0086;
+}
+
+.viola-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.viola-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.viola-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori-esempi);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.viola-codice-info p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-colori);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.viola-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.viola-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.viola-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    box-sizing: border-box;
+}
+
+.viola-esempio-card {
+    max-width: 366px;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.viola-esempio-testo {
+    width: 197px;
+    height: 141px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.viola-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.viola-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.viola-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viola-esempio-immagine img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.viola-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viola-percorso-prev,
+.viola-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.viola-percorso-prev:hover,
+.viola-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.viola-percorso-freccia {
+    font-size: 20px;
+}
 
 
 /* ========== RESPONSIVE SCHERMI PICCOLI ========== */
