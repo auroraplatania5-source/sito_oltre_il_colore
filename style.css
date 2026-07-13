@@ -18,8 +18,9 @@
 
     --titolo-card-grande: clamp(22px, 2.4vw, 28px);
     --titolo-card-piccola: clamp(18px, 2vw, 22px);
-    --titolo-card-colori-esempi: clamp(17px, 2vw, 20px);
-    --didascalia-card-colori: clamp(17px, 2vw, 20px);
+    --titolo-card-colori: clamp(17px, 2vw, 20px);
+    --didascalia-card-colori-esempi: clamp(17px, 2vw, 20px);
+    --didascalia-card-codici-colore: clamp(16px, 2vw, 18px);
 
     --marchio-header: clamp(18px, 2vw, 22px);
     --link-nav: clamp(16px, 1.6vw, 18px);
@@ -1220,7 +1221,7 @@ body {
 
 .rosso-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori-esempi);
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1228,7 +1229,7 @@ body {
 
 .rosso-codice-info p {
     font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori);
+    font-size: var(--didascalia-card-codici-colore);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1293,7 +1294,7 @@ body {
 
 .rosso-esempio-testo h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1302,7 +1303,7 @@ body {
 
 .rosso-esempio-testo p {
     font-family: var(--font-sans);
-    font-size: var(--testo-base);
+    font-size: var(--didascalia-card-colori-esempi);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1520,7 +1521,7 @@ body {
 
 .giallo-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori-esempi);
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1528,7 +1529,7 @@ body {
 
 .giallo-codice-info p {
     font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori);
+    font-size: var(--didascalia-card-codici-colore);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1594,7 +1595,7 @@ body {
 
 .giallo-esempio-testo h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1603,7 +1604,7 @@ body {
 
 .giallo-esempio-testo p {
     font-family: var(--font-sans);
-    font-size: var(--testo-base);
+    font-size: var(--didascalia-card-colori-esempi);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1844,7 +1845,7 @@ body {
 
 .blu-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori-esempi);
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1852,7 +1853,7 @@ body {
 
 .blu-codice-info p {
     font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori);
+    font-size: var(--didascalia-card-codici-colore);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -1917,7 +1918,7 @@ body {
 
 .blu-esempio-testo h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -1926,7 +1927,7 @@ body {
 
 .blu-esempio-testo p {
     font-family: var(--font-sans);
-    font-size: var(--testo-base);
+    font-size: var(--didascalia-card-colori-esempi);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -2149,7 +2150,7 @@ body {
 
 .verde-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori-esempi);
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -2157,7 +2158,7 @@ body {
 
 .verde-codice-info p {
     font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori);
+    font-size: var(--didascalia-card-codici-colore);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -2221,7 +2222,7 @@ body {
 
 .verde-esempio-testo h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -2230,7 +2231,7 @@ body {
 
 .verde-esempio-testo p {
     font-family: var(--font-sans);
-    font-size: var(--testo-base);
+    font-size: var(--didascalia-card-colori-esempi);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -2455,7 +2456,7 @@ body {
 
 .viola-codice-info h3 {
     font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori-esempi);
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -2463,7 +2464,7 @@ body {
 
 .viola-codice-info p {
     font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori);
+    font-size: var(--didascalia-card-codici-colore);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -2527,7 +2528,7 @@ body {
 
 .viola-esempio-testo h3 {
     font-family: var(--font-sans);
-    font-size: 20px;
+    font-size: var(--titolo-card-colori);
     font-weight: 600;
     color: #000000;
     margin: 0;
@@ -2536,7 +2537,7 @@ body {
 
 .viola-esempio-testo p {
     font-family: var(--font-sans);
-    font-size: var(--testo-base);
+    font-size: var(--didascalia-card-colori-esempi);
     font-weight: 400;
     color: #000000;
     margin: 0;
@@ -2591,6 +2592,622 @@ body {
 .viola-percorso-freccia {
     font-size: 20px;
 }
+
+/* ========== PAGINA COLORE ARANCIONE ========== */
+/* HERO ARANCIONE */
+.arancione-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_arancione.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.arancione-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.arancione-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
+
+.arancione-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* IMPATTO / ASSOCIAZIONI / USO */
+.arancione-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.arancione-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.arancione-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.arancione-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+.arancione-info-testo-riga {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CODICI COLORE */
+.arancione-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.arancione-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.arancione-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.arancione-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.arancione-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.arancione-campione-pieno {
+    background-color: #FFA500;
+}
+
+.arancione-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.arancione-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.arancione-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.arancione-campione-magenta {
+    background-color: #EF0086;
+    width: 35%;
+}
+
+.arancione-campione-giallo {
+    background-color: #FEE506;
+}
+
+.arancione-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.arancione-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.arancione-codice-info p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-codici-colore);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.arancione-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.arancione-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.arancione-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    box-sizing: border-box;
+}
+
+.arancione-esempio-card {
+    max-width: 366px;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.arancione-esempio-testo {
+    width: 197px;
+    height: 145px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.arancione-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.arancione-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-colori-esempi);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.arancione-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arancione-esempio-immagine img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.arancione-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arancione-percorso-prev,
+.arancione-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.arancione-percorso-prev:hover,
+.arancione-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.arancione-percorso-freccia {
+    font-size: 20px;
+}
+
+/* ========== PAGINA COLORE NERO ========== */
+/* HERO NERO */
+.nero-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_nero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.nero-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.nero-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
+
+.nero-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* IMPATTO / ASSOCIAZIONI / USO */
+.nero-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.nero-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.nero-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.nero-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.nero-info-testo-riga-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-wrap: pretty;
+}
+
+/* CODICI COLORE */
+.nero-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.nero-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.nero-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.nero-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nero-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.nero-campione-pieno {
+    background-color: #000000;
+}
+
+.nero-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.nero-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.nero-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.nero-campione-nero {
+    background-color: #000000;
+}
+
+.nero-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nero-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.nero-codice-info p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-codici-colore);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.nero-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.nero-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.nero-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    box-sizing: border-box;
+}
+
+.nero-esempio-card {
+    max-width: 366px;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.nero-esempio-testo {
+    width: 185px;
+    height: 145px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.nero-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.nero-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-colori-esempi);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.nero-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nero-esempio-immagine img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.nero-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nero-percorso-prev,
+.nero-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.nero-percorso-prev:hover,
+.nero-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.nero-percorso-freccia {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
 
 
 /* ========== RESPONSIVE SCHERMI PICCOLI ========== */
