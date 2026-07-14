@@ -3504,10 +3504,308 @@ body {
     font-size: 20px;
 }
 
+/* ========== PAGINA COLORE GRIGIO ========== */
+/* HERO GRIGIO */
+.grigio-hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("immagini/hero_image_grigio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
 
+.grigio-hero-titolo {
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
 
+.grigio-hero-titolo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    margin: 0;
+}
 
+.grigio-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}
 
+/* IMPATTO / ASSOCIAZIONI / USO */
+.grigio-info {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 32px;
+    box-sizing: border-box;
+}
+
+.grigio-info-blocco {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.grigio-info-titolo {
+    width: 350px;
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.grigio-info-testo {
+    max-width: 560px;
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.grigio-info-testo-riga {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-wrap: pretty;
+}
+
+/* CODICI COLORE */
+.grigio-codici {
+    width: 100%;
+    height: 452px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.grigio-codici-contenitore {
+    max-width: 1334px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.grigio-codici-griglia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.grigio-codice-card {
+    width: 280px;
+    height: 93px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.grigio-codice-campione {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.grigio-campione-pieno {
+    background-color: #BFBFBF;
+}
+
+.grigio-campione-cmyk {
+    display: flex;
+    flex-direction: column;
+    gap: 5.12px;
+}
+
+.grigio-campione-barra {
+    width: 60px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.grigio-campione-grigio {
+    background-color: #F0EFEF;
+}
+
+.grigio-campione-nero {
+    background-color: #000000;
+    width: 25%;
+}
+
+.grigio-codice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.grigio-codice-info h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.grigio-codice-info p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-codici-colore);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* ESEMPI DI UTILIZZO */
+.grigio-esempi {
+    width: 100%;
+    padding: 160px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.grigio-esempi-titolo {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.grigio-esempi-griglia {
+    max-width: 1220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    gap: 45px;
+    box-sizing: border-box;
+}
+
+.grigio-esempio-card {
+    max-width: 366px;
+    height: 178px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.grigio-esempio-testo {
+    width: 205px;
+    height: 168px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.grigio-esempio-testo h3 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-card-colori);
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.grigio-esempio-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--didascalia-card-colori-esempi);
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.grigio-esempio-immagine {
+    max-width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grigio-esempio-immagine img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TORNA INDIETRO / AVANTI */
+.grigio-percorso {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grigio-percorso-prev,
+.grigio-percorso-next {
+    font-family: var(--font-sans);
+    font-size: var(--link-nav);
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.grigio-percorso-prev:hover,
+.grigio-percorso-next:hover {
+    opacity: 0.7;
+}
+
+.grigio-percorso-freccia {
+    font-size: 20px;
+}
 
 
 /* ========== RESPONSIVE SCHERMI PICCOLI ========== */
