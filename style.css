@@ -351,7 +351,7 @@ body {
 
 .hero-linguaggio {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_sezione_linguaggio.png");
     background-size: cover;
     background-position: center;
@@ -631,7 +631,7 @@ body {
 /* ========== PAGINA PERCEZIONE ========== */
 .hero-percezione { 
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_percezione.png");
     background-size: cover;
     background-position: center;
@@ -898,7 +898,7 @@ body {
 /* ========== INFO SUL PROGETTO ========== */
 .hero-info-progetto {
     width: 100%;
-    height: 800px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_bibliografia.png");
     background-size: cover;
     background-position: center;
@@ -976,7 +976,7 @@ body {
 /* HERO BIBLIOGRAFIA */
 .hero-bibliografia {
     width: 100%;
-    height: 800px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_bibliografia.png");
     background-size: cover;
     background-position: center;
@@ -1061,7 +1061,7 @@ body {
 /* HERO ROSSO */
 .rosso-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_rosso.png");
     background-size: cover;
     background-position: center;
@@ -1361,7 +1361,7 @@ body {
 /* HERO GIALLO */
 .giallo-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_giallo.png");
     background-size: cover;
     background-position: center;
@@ -1680,7 +1680,7 @@ body {
 /* HERO BLU */
 .blu-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_blu.png");
     background-size: cover;
     background-position: center;
@@ -1985,7 +1985,7 @@ body {
 /* HERO VERDE */
 .verde-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_verde.png");
     background-size: cover;
     background-position: center;
@@ -2290,7 +2290,7 @@ body {
 /* HERO VIOLA */
 .viola-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_viola.png");
     background-size: cover;
     background-position: center;
@@ -2596,7 +2596,7 @@ body {
 /* HERO ARANCIONE */
 .arancione-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_arancione.png");
     background-size: cover;
     background-position: center;
@@ -2903,7 +2903,7 @@ body {
 /* HERO NERO */
 .nero-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_nero.png");
     background-size: cover;
     background-position: center;
@@ -3205,7 +3205,7 @@ body {
 /* HERO BIANCO */
 .bianco-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_bianco.png");
     background-size: cover;
     background-position: center;
@@ -3507,7 +3507,7 @@ body {
 /* HERO GRIGIO */
 .grigio-hero {
     width: 100%;
-    height: 900px;
+    height: clamp(250px, 50vw, 700px);
     background-image: url("immagini/hero_image_grigio.png");
     background-size: cover;
     background-position: center;
@@ -3822,25 +3822,13 @@ body {
 
     /* ========== HERO - HOME ========== */
     .hero {
-        height: 700px;
+        height: clamp(220px, 55vw, 600px);
         padding: 0 32px;
     }
 
     /* ========== DESCRIZIONE E CITAZIONE ========== */
     .descrizione {
         padding: 100px 32px 140px;
-    }
-
-    .contenitore {
-        max-width: 100%;
-    }
-
-    .testo-descrizione {
-        max-width: 100%;
-    }
-
-    .citazione {
-        max-width: 100%;
     }
 
     /* ========== CONTENUTI IN EVIDENZA ========== */
@@ -3884,7 +3872,6 @@ body {
     }
 
     /* ========== HERO ========== */
-
     .hero-linguaggio {
         height: 700px;
         padding: 0 32px;
@@ -3979,7 +3966,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 90%;
+        width: 92%;
         height: 100%;
         border-radius: 15px;
     }
@@ -3987,7 +3974,24 @@ body {
     .card-colore p {
         width: 100%;
     }
+
+    /* ========== INFO SUL PROGETTO / BIBLIOGRAFIA ========== */
+    .pagina-info-progetto,
+    .pagina-bibliografia {
+        padding: 120px 32px 160px;
     }
+
+    .contenitore-info-progetto {
+        width: clamp(400px, 70vw, 756px);
+        margin: 0;
+    }
+
+    .contenitore-bibliografia {
+        width: clamp(400px, 75vw, 900px);
+        margin: 0;
+    }
+
+}
 
 
 /* ========== MOBILE ========== */
@@ -3995,7 +3999,7 @@ body {
 
     /* ========== HEADER E NAVIGAZIONE ========== */
     .header-sito {
-        padding: 22px 24px;
+        padding: 18px 20px;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
@@ -4006,37 +4010,45 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 14px;
+        gap: 8px;
     }
 
     .main-nav a {
+        font-size: 14px;
         text-align: center;
     }
 
     .nome-sito {
-        flex-shrink: 0;
+    flex-shrink: 0;
+    font-size: 18px;
     }
 
     /* ========== HERO - HOME ========== */
-    .hero {
-        height: auto;
-        min-height: 680px;
-        padding: 160px 24px 70px;
+    .hero, .hero-linguaggio, .hero-percezione,
+    .hero-info-progetto, .hero-bibliografia, 
+    .rosso-hero, .giallo-hero, .blu-hero,
+    .verde-hero, .viola-hero, .arancione-hero,
+    .nero-hero, .bianco-hero, .grigio-hero {
+        height: clamp(280px, 55vw, 400px);
+        padding: 140px 20px 50px;
         background-position: center;
         align-items: center;
     }
 
-    .hero-testo {
-        width: 100%;
-    }
-
-    .hero-testo h1 {
+    .hero-testo h1, .percezione-titolo h1,
+    .hero-info-testo h1, .hero-bibliografia-testo h1,
+    .rosso-hero-titolo h1, .giallo-hero-titolo h1, .blu-hero-titolo h1,
+    .verde-hero-titolo h1, .viola-hero-titolo h1, .arancione-hero-titolo h1,
+    .nero-hero-titolo h1, .bianco-hero-titolo h1, .grigio-hero-titolo h1 {
+        font-size: clamp(26px, 7vw, 36px);
         line-height: 1.05;
     }
 
-    .sottotitolo {
-        width: 100%;
-        max-width: 520px;
+    .sottotitolo, .linguaggio-sottotitolo, .percezione-sottotitolo,
+    .rosso-hero-sottotitolo .giallo-hero-sottotitolo, .blu-hero-sottotitolo,
+    .verde-hero-sottotitolo, .viola-hero-sottotitolo, .arancione-hero-sottotitolo,
+    .nero-hero-sottotitolo, .bianco-hero-sottotitolo, .grigio-hero-sottotitolo {
+        font-size: clamp(19px, 4.5vw, 24px);
         white-space: normal;
         line-height: 1.25;
         margin-top: 10px;
@@ -4047,20 +4059,16 @@ body {
         padding: 80px 24px 100px;
     }
 
-    .contenitore {
-        width: 100%;
-        max-width: none;
-    }
-
     .testo-descrizione {
         width: 100%;
         max-width: none;
     }
 
-    .citazione {
+    .citazione, .autore {
         width: 100%;
         max-width: none;
         margin-top: 30px;
+        font-size: 24px;
     }
 
     /* ========== CONTENUTI IN EVIDENZA ========== */
@@ -4074,6 +4082,7 @@ body {
 
     .contenitore-card h2 {
         margin-bottom: 40px;
+        font-size: 22px;
     }
 
     .griglia-card {
@@ -4091,6 +4100,7 @@ body {
         top: 14px;
         left: 18px;
         right: 18px;
+        font-size: 21px;
     }
 
     .card-secondarie {
@@ -4161,26 +4171,9 @@ body {
         gap: 14px;
     }
 
-    .nome-sito {
-        flex-shrink: 0;
-    }
-
-    /* ========== HERO ========== */
-    .hero-linguaggio {
-        height: auto;
-        min-height: 620px;
-        padding: 150px 24px 60px;
-        align-items: center;
-    }
-
-    .linguaggio-titolo h1 {
-        font-size: clamp(32px, 8vw, 42px);
-        line-height: 1.1;
-    }
-
-    .linguaggio-sottotitolo {
-        margin-top: 10px;
-        line-height: 1.3;
+    /* ========== DESCRIZIONE ========== */
+    .linguaggio-titolo h1 span {
+        font-size: clamp(26px, 7vw, 36px);
     }
 
     /* ========== DESCRIZIONE ========== */
@@ -4202,7 +4195,15 @@ body {
     }
 
     .linguaggio-info-contenitore {
-
+        max-width: 1220px;
+        padding: 0 10px 0 10px;
+        justify-content: center;
+        gap: 45px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+        align-content: center;
     }
 
     .linguaggio-info-blocco {
@@ -4212,12 +4213,12 @@ body {
 
     .linguaggio-info-blocco h2 {
         white-space: normal;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .linguaggio-info-blocco p {
         width: 100%;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* ========== SEZIONE COLORI ========== */
@@ -4227,7 +4228,7 @@ body {
     }
 
     .titolo-colori h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .titolo-colori p {
@@ -4247,7 +4248,6 @@ body {
         width: 100%;
         height: auto;
         padding: 16px 16px 16px;
-        /* padding su TUTTI i lati, non solo top */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4275,13 +4275,36 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 95%;
+        width: 92%;
         height: 100%;
         border-radius: 15px;
     }
 
     .card-colore p {
         width: 100%;
+        font-size: 17px;
     }
 
+    /* ========== INFO SUL PROGETTO / BIBLIOGRAFIA ========== */
+    .pagina-info-progetto,
+    .pagina-bibliografia {
+        padding: 80px 24px 100px;
+    }
+
+    .contenitore-info-progetto, .contenitore-bibliografia {
+        width: clamp(260px, 90vw, 500px);
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .blocco-info-progetto h2,
+    .blocco-bibliografia h2 {
+        font-size: 24px;
+    }
+
+    .blocco-info-progetto p,
+    .blocco-bibliografia li,
+    .introduzione-bibliografia {
+        font-size: 17px;
+    }
 }
