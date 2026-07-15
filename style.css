@@ -363,12 +363,12 @@ body {
 
 .linguaggio-titolo h1 {
     font-family: "Yeseva One", serif;
-    font-size: 72px;
+    font-size: 55px;
     font-weight: 400;
     color: #ffffff;
 }
 
-.linguaggio-titolo h1 span {
+.linguaggio-titolo h1 {
     display: block;
 }
 
@@ -3878,7 +3878,9 @@ body {
     }
 
     .linguaggio-titolo h1 {
-        font-size: clamp(42px, 6vw, 72px);
+        font-size: clamp(42px, 5vw, 72px);
+        white-space: pre;
+        padding-bottom: 10px;
     }
 
     /* ========== DESCRIZIONE ========== */
@@ -3978,7 +3980,7 @@ body {
     /* ========== INFO SUL PROGETTO / BIBLIOGRAFIA ========== */
     .pagina-info-progetto,
     .pagina-bibliografia {
-        padding: 120px 32px 160px;
+        padding: 120px 100px 160px;
     }
 
     .contenitore-info-progetto {
@@ -4040,18 +4042,19 @@ body {
     .rosso-hero-titolo h1, .giallo-hero-titolo h1, .blu-hero-titolo h1,
     .verde-hero-titolo h1, .viola-hero-titolo h1, .arancione-hero-titolo h1,
     .nero-hero-titolo h1, .bianco-hero-titolo h1, .grigio-hero-titolo h1 {
-        font-size: clamp(26px, 7vw, 36px);
+        font-size: clamp(32px, 5vw, 72px);
         line-height: 1.05;
+        font-family: Yeseva One;
+        padding-bottom: 10px;
     }
 
     .sottotitolo, .linguaggio-sottotitolo, .percezione-sottotitolo,
     .rosso-hero-sottotitolo .giallo-hero-sottotitolo, .blu-hero-sottotitolo,
     .verde-hero-sottotitolo, .viola-hero-sottotitolo, .arancione-hero-sottotitolo,
     .nero-hero-sottotitolo, .bianco-hero-sottotitolo, .grigio-hero-sottotitolo {
-        font-size: clamp(19px, 4.5vw, 24px);
+        font-size: clamp(12px, 3vw, 20px);
         white-space: normal;
         line-height: 1.25;
-        margin-top: 10px;
     }
 
     /* ========== DESCRIZIONE E CITAZIONE ========== */
@@ -4164,16 +4167,22 @@ body {
         gap: 20px;
     }
 
-    .main-nav-linguaggio {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    .main-nav-linguaggio, .main-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
         gap: 14px;
+        justify-items: center;
+    }
+
+    .main-nav-linguaggio a{
+        font-size: 14px;
+        text-align: center;
     }
 
     /* ========== DESCRIZIONE ========== */
-    .linguaggio-titolo h1 span {
-        font-size: clamp(26px, 7vw, 36px);
+    .linguaggio-titolo h1 {
+        font-size: clamp(32px, 5vw, 72px);
     }
 
     /* ========== DESCRIZIONE ========== */
