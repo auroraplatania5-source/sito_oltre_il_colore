@@ -3973,61 +3973,84 @@ body {
 
     /* ========== PAGINA DETTAGLIO CARD COLORI ========== */
     /* IMPATTO / ASSOCIAZIONI / USO */
-    .rosso-info {
+    .rosso-info, .giallo-info, .blu-info,
+    .verde-info, .viola-info, .arancione-info,
+    .nero-info, .bianco-info, .grigio-info {
         padding: 100px 32px;
         gap: 70px;
     }
 
     /* CODICI COLORE */
-    .rosso-codici {
+    .rosso-codici, .giallo-codici, .blu-codici,
+    .verde-codici, .viola-codici, .arancione-codici,
+    .nero-codici, .bianco-codici, .grigio-codici {
         padding: 60px 0;
     }
 
-    .rosso-codici-contenitore {
+    .rosso-codici-contenitore, .giallo-codici-contenitore, .blu-codici-contenitore,
+    .verde-codici-contenitore, .viola-codici-contenitore, .arancione-codici-contenitore,
+    .nero-codici-contenitore, .bianco-codici-contenitore, .grigio-codici-contenitore {
         gap: 40px;
         padding: 0 24px;
     }
 
-    .rosso-codici-griglia {
+    .rosso-codici-griglia, .giallo-codici-griglia, .blu-codici-griglia,
+    .verde-codici-griglia, .viola-codici-griglia, .arancione-codici-griglia,
+    .nero-codici-griglia, .bianco-codici-griglia, .grigio-codici-griglia {
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
         gap: 50px;
         padding: 0 32px;
         box-sizing: border-box;
     }
 
-    .rosso-codice-card {
+    .rosso-codice-card, .giallo-codice-card, .blu-codice-card,
+    .verde-codice-card, .viola-codice-card, .arancione-codice-card,
+    .nero-codice-card, .bianco-codice-card, .grigio-codice-card {
         width: 100%;
     }
 
-    .rosso-codice-campione {
+    .rosso-codice-campione, .giallo-codice-campione, .blu-codice-campione,
+    .verde-codice-campione, .viola-codice-campione, .arancione-codice-campione,
+    .nero-codice-campione, .bianco-codice-campione, .grigio-codice-campione {
         width: clamp(44px, 5vw, 60px);
         height: clamp(44px, 5vw, 60px);
     }
 
-    .rosso-campione-barra {
+    .rosso-campione-barra, .giallo-campione-barra, .blu-campione-barra,
+    .verde-campione-barra, .viola-campione-barra, .arancione-campione-barra,
+    .nero-campione-barra, .bianco-campione-barra, .grigio-campione-barra {
         width: clamp(44px, 5vw, 60px);
     }
 
     /* ESEMPI DI UTILIZZO */
-    .rosso-esempi {
+    .rosso-esempi, .giallo-esempi, .blu-esempi,
+    .verde-esempi, .viola-esempi, .arancione-esempi,
+    .nero-esempi, .bianco-esempi, .grigio-esempi {
         padding: 120px 0;
     }
 
-    .rosso-esempi-griglia {
+    .rosso-esempi-griglia, .giallo-esempi-griglia, .blu-esempi-griglia,
+    .verde-esempi-griglia, .viola-esempi-griglia, .arancione-esempi-griglia,
+    .nero-esempi-griglia, .bianco-esempi-griglia, .grigio-esempi-griglia {
         grid-template-columns: repeat(2, 1fr);
         gap: 45px;
         padding: 30px;
     }
 
-    .rosso-esempio-card {
+    .rosso-esempio-card, .giallo-esempio-card, .blu-esempio-card,
+    .verde-esempio-card, .viola-esempio-card, .arancione-esempio-card,
+    .nero-esempio-card, .bianco-esempio-card, .grigio-esempio-card {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
     }
 
-    .rosso-percorso {
+    .rosso-percorso, .giallo-percorso, .blu-percorso,
+    .verde-percorso, .viola-percorso, .arancione-percorso,
+    .nero-percorso, .bianco-percorso, .grigio-percorso {
         padding: 0 30px 60px;
     }
 
@@ -4184,7 +4207,7 @@ body {
     }
 
     .sottotitolo, .linguaggio-sottotitolo, .percezione-sottotitolo,
-    .rosso-hero-sottotitolo .giallo-hero-sottotitolo, .blu-hero-sottotitolo,
+    .rosso-hero-sottotitolo, .giallo-hero-sottotitolo, .blu-hero-sottotitolo,
     .verde-hero-sottotitolo, .viola-hero-sottotitolo, .arancione-hero-sottotitolo,
     .nero-hero-sottotitolo, .bianco-hero-sottotitolo, .grigio-hero-sottotitolo {
         font-size: clamp(12px, 3vw, 20px);
@@ -4430,90 +4453,88 @@ body {
 
     /* ========== PAGINA DETTAGLIO CARD COLORI ========== */
     /* IMPATTO / ASSOCIAZIONI / USO */
-    .rosso-info {
+    .rosso-info, .giallo-info, .blu-info,
+    .verde-info, .viola-info, .arancione-info,
+    .nero-info, .bianco-info, .grigio-info {
         padding: 60px 20px;
         gap: 40px;
     }
 
-    .rosso-info-blocco {
+    .rosso-info-blocco, .giallo-info-blocco, .blu-info-blocco,
+    .verde-info-blocco, .viola-info-blocco, .arancione-info-blocco,
+    .nero-info-blocco, .bianco-info-blocco, .grigio-info-blocco {
         flex-direction: column;
         gap: 16px;
     }
 
-    .rosso-info-titolo {
+    .rosso-info-titolo, .giallo-info-titolo, .blu-info-titolo,
+    .verde-info-titolo, .viola-info-titolo, .arancione-info-titolo,
+    .nero-info-titolo, .bianco-info-titolo, .grigio-info-titolo  {
         width: 100%;
     }
 
     /* CODICI COLORE */
-    .rosso-codici {
+    .rosso-codici, .giallo-codici, .blu-codici,
+    .verde-codici, .viola-codici, .arancione-codici,
+    .nero-codici, .bianco-codici, .grigio-codici {
         height: auto;
         padding: 50px 0;
     }
 
-    .rosso-codici-contenitore {
+    .rosso-codici-contenitore, .giallo-codici-contenitore, .blu-codici-contenitore,
+    .verde-codici-contenitore, .viola-codici-contenitore, .arancione-codici-contenitore,
+    .nero-codici-contenitore, .bianco-codici-contenitore, .grigio-codici-contenitore {
         gap: 30px;
         padding: 0 20px;
     }
 
-    .rosso-codici-griglia {
+    .rosso-codici-griglia, .giallo-codici-griglia, .blu-codici-griglia,
+    .verde-codici-griglia, .viola-codici-griglia, .arancione-codici-griglia,
+    .nero-codici-griglia, .bianco-codici-griglia, .grigio-codici-griglia {
         margin: 0 auto;
         display: grid;
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: repeat(1, 280px);
         gap: 20px;
         max-width: 280px;
         box-sizing: border-box;
+        padding: 0;
     }
 
-    .rosso-codice-card {
+    .rosso-codice-card, .giallo-codice-card, .blu-codice-card,
+    .verde-codice-card, .viola-codice-card, .arancione-codice-card,
+    .nero-codice-card, .bianco-codice-card, .grigio-codice-card {
         width: 100%;
         height: auto;
         min-width: 0;
     }
 
     /* ESEMPI DI UTILIZZO */
-    .rosso-esempi {
+    .rosso-esempi, .giallo-esempi, .blu-esempi,
+    .verde-esempi, .viola-esempi, .arancione-esempi,
+    .nero-esempi, .bianco-esempi, .grigio-esempi {
         padding: 70px 0;
         gap: 40px;
     }
 
-    .rosso-esempi-titolo {
+    .rosso-esempi-titolo, .giallo-esempi-titolo, .blu-esempi-titolo,
+    .verde-esempi-titolo, .viola-esempi-titolo, .arancione-esempi-titolo,
+    .nero-esempi-titolo, .bianco-esempi-titolo, .grigio-esempi-titolo {
         padding: 0 20px;
     }
 
-    .rosso-esempi-griglia {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        gap: 20px;
+    .rosso-esempi-griglia, .giallo-esempi-griglia, .blu-esempi-griglia,
+    .verde-esempi-griglia, .viola-esempi-griglia, .arancione-esempi-griglia,
+    .nero-esempi-griglia, .bianco-esempi-griglia, .grigio-esempi-griglia {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        gap: 30px;
         padding: 0 20px;
-        max-width: 420px;
-        box-sizing: border-box;
-    }
-
-    .rosso-esempio-card {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        min-width: 0;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        padding: 24px;
-    }
-
-    .rosso-esempio-testo {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-    }
-
-    .rosso-esempio-immagine {
-        align-self: flex-start;
-        max-width: 90px;
     }
 
     /* TORNA INDIETRO / AVANTI */
-    .rosso-percorso {
+    .rosso-percorso, .giallo-percorso, .blu-percorso
+    .verde-percorso, .viola-percorso, .arancione-percorso,
+    .nero-percorso, .bianco-percorso, .grigio-percorso {
         padding: 0 20px 60px;
     }
 
@@ -4617,15 +4638,38 @@ body {
         gap: 30px;
     }
 
-    .blocco-info-progetto h2,
-    .blocco-bibliografia h2,
-    .percezione-esperimento-titolo h2,
-    .percezione-spettro-testo h2,
-    .percezione-visione-contenitore h2,
-    .percezione-processo-titolo h2,
-    .rosso-info-titolo h2,
-    .rosso-codici-titolo h2,
-    .rosso-esempi-titolo h2 {
+    .blocco-info-progetto, .blocco-bibliografia,
+    .percezione-esperimento-titolo,
+    .percezione-spettro-testo,
+    .percezione-visione-contenitore,
+    .percezione-processo-titolo,
+    .rosso-info-titolo,
+    .rosso-codici-titolo,
+    .rosso-esempi-titolo,
+    .giallo-info-titolo,
+    .giallo-codici-titolo,
+    .giallo-esempi-titolo,
+    .blu-info-titolo,
+    .blu-codici-titolo,
+    .blu-esempi-titolo,
+    .verde-info-titolo,
+    .verde-codici-titolo,
+    .verde-esempi-titolo,
+    .viola-info-titolo,
+    .viola-codici-titolo,
+    .viola-esempi-titolo,
+    .arancione-info-titolo,
+    .arancione-codici-titolo,
+    .arancione-esempi-titolo,
+    .nero-info-titolo,
+    .nero-codici-titolo,
+    .nero-esempi-titolo,
+    .bianco-info-titolo,
+    .bianco-codici-titolo,
+    .bianco-esempi-titolo,
+    .grigio-info-titolo,
+    .grigio-codici-titolo,
+    .grigio-esempi-titolo {
         font-size: 22px;
     }
 
@@ -4636,7 +4680,15 @@ body {
     .percezione-spettro-testo p,
     .percezione-visione-testo-gruppo p,
     .percezione-processo-card p,
-    .rosso-info-testo p {
+    .rosso-info-testo p,
+    .giallo-info-testo p,
+    .blu-info-testo p,
+    .verde-info-testo p,
+    .viola-info-testo p,
+    .arancione-info-testo p,
+    .nero-info-testo p,
+    .bianco-info-testo p,
+    .grigio-info-testo p {
         font-size: 17px;
     }
 }
