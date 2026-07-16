@@ -728,11 +728,6 @@ body {
     margin: 0;
 }
 
-.percezione-esperimento-immagine {
-    max-width: 480px;
-    width: 100%;
-}
-
 .percezione-esperimento-immagine img {
     width: 100%;
     height: auto;
@@ -892,7 +887,6 @@ body {
     line-height: 1.5;
     color: #000000;
     margin: 0;
-    text-wrap: pretty; 
 }
 
 /* ========== INFO SUL PROGETTO ========== */
@@ -3998,8 +3992,9 @@ body {
         max-width: clamp(280px, 50vw, 610px);
     }
 
-    .percezione-esperimento-immagine {
-        max-width: clamp(220px, 40vw, 480px);
+    .percezione-esperimento-immagine img{
+        width: clamp(220px, 65vw, 420px);
+        justify-self: center;
     }
 
     /* SPETTRO VISIBILE */
@@ -4012,8 +4007,9 @@ body {
         padding: 0 32px;
     }
 
-    .percezione-spettro-immagine {
-        max-width: clamp(220px, 40vw, 500px);
+    .percezione-spettro-immagine img {
+       width: clamp(220px, 65vw, 420px);
+       align-self: center;
     }
 
     .percezione-spettro-testo {
@@ -4032,8 +4028,6 @@ body {
 
     /* COME FUNZIONA IL PROCESSO */
     .percezione-processo-griglia {
-        width: 100%;
-        max-width: 1000px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -4044,7 +4038,6 @@ body {
 
     .percezione-processo-card {
         width: 100%;
-        gap: 50px;
     }
 
     .percezione-processo-immagine {
@@ -4054,9 +4047,10 @@ body {
     }
 
     .percezione-processo-foto {
-        width: 100%;
+        height: clamp(110px, 12vw, 145px);
         object-position: center;
         display: block;
+        max-width: clamp(200px, 26vw, 356px);
     }
 
     /* ========== INFO SUL PROGETTO / BIBLIOGRAFIA ========== */
@@ -4388,7 +4382,7 @@ body {
 
     .percezione-esperimento-contenitore {
         flex-direction: column;
-        gap: 30px;
+        gap: 55px;
         padding: 0 24px;
     }
 
@@ -4408,7 +4402,7 @@ body {
 
     .percezione-spettro-contenitore {
         flex-direction: column;
-        gap: 24px;
+        gap: 55px;
         padding: 0 24px;
     }
 
@@ -4433,17 +4427,33 @@ body {
     /* COME FUNZIONA IL PROCESSO */
     .percezione-processo {
         padding: 0 0 70px;
+        flex-wrap: wrap;
     }
 
     .percezione-processo-griglia {
-        width: 100%;
         max-width: 400px;
-        margin: 0 auto;
-        display: grid;
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 100px;
         padding: 0 24px;
-        box-sizing: border-box;
+    }
+    
+    .percezione-processo-titolo{
+        align-self: flex-start;
+        padding-left: 24px;
+    }
+
+    .percezione-processo-card {
+        width: 100%;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .percezione-processo-foto {
+        width: clamp(200px, 65vw, 356px);
+        height: clamp(130px, 12vw, 145px);
+        max-width: none;
+        align-self: center;
+        min-width: 338px;
     }
 
     /* ========== INFO SUL PROGETTO / BIBLIOGRAFIA ========== */
