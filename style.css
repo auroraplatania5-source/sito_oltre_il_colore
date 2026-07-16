@@ -3971,6 +3971,66 @@ body {
         width: 100%;
     }
 
+    /* ========== PAGINA DETTAGLIO CARD COLORI ========== */
+    /* IMPATTO / ASSOCIAZIONI / USO */
+    .rosso-info {
+        padding: 100px 32px;
+        gap: 70px;
+    }
+
+    /* CODICI COLORE */
+    .rosso-codici {
+        padding: 60px 0;
+    }
+
+    .rosso-codici-contenitore {
+        gap: 40px;
+        padding: 0 24px;
+    }
+
+    .rosso-codici-griglia {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+
+    .rosso-codice-card {
+        width: 100%;
+    }
+
+    .rosso-codice-campione {
+        width: clamp(44px, 5vw, 60px);
+        height: clamp(44px, 5vw, 60px);
+    }
+
+    .rosso-campione-barra {
+        width: clamp(44px, 5vw, 60px);
+    }
+
+    /* ESEMPI DI UTILIZZO */
+    .rosso-esempi {
+        padding: 120px 0;
+    }
+
+    .rosso-esempi-griglia {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+        padding: 30px;
+    }
+
+    .rosso-esempio-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .rosso-percorso {
+        padding: 0 30px 60px;
+    }
+
     /* ========== PAGINA PERCEZIONE ========== */
     .percezione-contenitore {
         max-width: clamp(300px, 65vw, 750px);
@@ -4233,7 +4293,7 @@ body {
         margin: 0;
     }
 
-/* ========== HEADER E NAVIGAZIONE ========== */
+    /* ========== HEADER E NAVIGAZIONE ========== */
     .header-sito {
         padding: 22px 24px;
         flex-direction: row;
@@ -4368,6 +4428,95 @@ body {
         font-size: 17px;
     }
 
+    /* ========== PAGINA DETTAGLIO CARD COLORI ========== */
+    /* IMPATTO / ASSOCIAZIONI / USO */
+    .rosso-info {
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .rosso-info-blocco {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .rosso-info-titolo {
+        width: 100%;
+    }
+
+    /* CODICI COLORE */
+    .rosso-codici {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .rosso-codici-contenitore {
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .rosso-codici-griglia {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+
+    .rosso-codice-card {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+    }
+
+    /* ESEMPI DI UTILIZZO */
+    .rosso-esempi {
+        padding: 70px 0;
+        gap: 40px;
+    }
+
+    .rosso-esempi-titolo {
+        padding: 0 20px;
+    }
+
+    .rosso-esempi-griglia {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+        max-width: 420px;
+        box-sizing: border-box;
+    }
+
+    .rosso-esempio-card {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .rosso-esempio-testo {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .rosso-esempio-immagine {
+        align-self: flex-start;
+        max-width: 90px;
+    }
+
+    /* TORNA INDIETRO / AVANTI */
+    .rosso-percorso {
+        padding: 0 20px 60px;
+    }
+
     /* ========== PAGINA PERCEZIONE ========== */
     .percezione-contenitore {
         max-width: clamp(260px, 90vw, 530px);
@@ -4469,21 +4618,25 @@ body {
     }
 
     .blocco-info-progetto h2,
-    .blocco-bibliografia h2, 
+    .blocco-bibliografia h2,
     .percezione-esperimento-titolo h2,
     .percezione-spettro-testo h2,
     .percezione-visione-contenitore h2,
-    .percezione-processo-titolo h2 {
+    .percezione-processo-titolo h2,
+    .rosso-info-titolo h2,
+    .rosso-codici-titolo h2,
+    .rosso-esempi-titolo h2 {
         font-size: 22px;
     }
 
     .blocco-info-progetto p,
     .blocco-bibliografia li,
-    .introduzione-bibliografia, 
+    .introduzione-bibliografia,
     .percezione-esperimento-testo-gruppo p,
-    .percezione-spettro-testo p, 
+    .percezione-spettro-testo p,
     .percezione-visione-testo-gruppo p,
-    .percezione-processo-card p {
+    .percezione-processo-card p,
+    .rosso-info-testo p {
         font-size: 17px;
     }
 }
