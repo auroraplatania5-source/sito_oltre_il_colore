@@ -4044,7 +4044,7 @@ body {
     .verde-esempio-card, .viola-esempio-card, .arancione-esempio-card,
     .nero-esempio-card, .bianco-esempio-card, .grigio-esempio-card {
         width: 100%;
-        max-width: 100%;
+        justify-self: center;
         box-sizing: border-box;
     }
 
@@ -4520,6 +4520,8 @@ body {
     .verde-esempi-titolo, .viola-esempi-titolo, .arancione-esempi-titolo,
     .nero-esempi-titolo, .bianco-esempi-titolo, .grigio-esempi-titolo {
         padding: 0 20px;
+        font-size: 22px;
+        text-wrap: balance;
     }
 
     .rosso-esempi-griglia, .giallo-esempi-griglia, .blu-esempi-griglia,
@@ -4645,31 +4647,22 @@ body {
     .percezione-processo-titolo,
     .rosso-info-titolo,
     .rosso-codici-titolo,
-    .rosso-esempi-titolo,
     .giallo-info-titolo,
     .giallo-codici-titolo,
-    .giallo-esempi-titolo,
     .blu-info-titolo,
     .blu-codici-titolo,
-    .blu-esempi-titolo,
     .verde-info-titolo,
     .verde-codici-titolo,
-    .verde-esempi-titolo,
     .viola-info-titolo,
     .viola-codici-titolo,
-    .viola-esempi-titolo,
     .arancione-info-titolo,
     .arancione-codici-titolo,
-    .arancione-esempi-titolo,
     .nero-info-titolo,
     .nero-codici-titolo,
-    .nero-esempi-titolo,
     .bianco-info-titolo,
     .bianco-codici-titolo,
-    .bianco-esempi-titolo,
     .grigio-info-titolo,
-    .grigio-codici-titolo,
-    .grigio-esempi-titolo {
+    .grigio-codici-titolo {
         font-size: 22px;
     }
 
