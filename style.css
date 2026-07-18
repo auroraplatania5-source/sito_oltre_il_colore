@@ -18,9 +18,9 @@
 
     --titolo-card-grande: clamp(22px, 2.4vw, 28px);
     --titolo-card-piccola: clamp(18px, 2vw, 22px);
-    --titolo-card-colori: clamp(17px, 2vw, 20px);
-    --didascalia-card-colori-esempi: clamp(17px, 2vw, 20px);
-    --didascalia-card-codici-colore: clamp(16px, 2vw, 18px);
+    --titolo-card-colori: clamp(18px, 1.7vw, 19px);
+    --didascalia-card-colori-esempi: clamp(15px, 1vw, 20px);
+    --didascalia-card-codici-colore: clamp(16px, 1vw, 18px);
 
     --marchio-header: clamp(18px, 2vw, 22px);
     --link-nav: clamp(16px, 1.6vw, 18px);
@@ -1051,12 +1051,47 @@ body {
     text-decoration: underline;
 }
 
-/* ========== PAGINA COLORE ROSSO ========== */
-/* HERO ROSSO */
+/* ========== PAGINA COLORI ========== */
+
 .rosso-hero {
+    background-image: url("immagini/hero_image_rosso.png");
+}
+.giallo-hero {
+    background-image: url("immagini/hero_image_giallo.png");
+}
+
+.blu-hero {
+    background-image: url("immagini/hero_image_blu.png");
+}
+
+.verde-hero {
+    background-image: url("immagini/hero_image_verde.png");
+}
+
+.viola-hero {
+    background-image: url("immagini/hero_image_viola.png");
+}
+
+.arancione-hero {
+    background-image: url("immagini/hero_image_arancione.png");
+}
+
+.nero-hero {
+    background-image: url("immagini/hero_image_nero.png");
+}
+
+.bianco-hero {
+    background-image: url("immagini/hero_image_bianco.png");
+}
+
+.grigio-hero {
+    background-image: url("immagini/hero_image_grigio.png");
+}
+
+/* HERO */
+.rosso-hero, .giallo-hero, .blu-hero, .verde-hero, .viola-hero, .arancione-hero, .nero-hero, .bianco-hero, .grigio-hero {
     width: 100%;
     height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_rosso.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1066,7 +1101,7 @@ body {
     box-sizing: border-box;
 }
 
-.rosso-hero-titolo {
+.rosso-hero-titolo, .giallo-hero-titolo, .blu-hero-titolo, .verde-hero-titolo, .viola-hero-titolo, .arancione-hero-titolo, .nero-hero-titolo, .bianco-hero-titolo, .grigio-hero-titolo {
     max-width: 900px;
     width: 100%;
     color: #ffffff;
@@ -1075,7 +1110,7 @@ body {
     gap: 10px;
 }
 
-.rosso-hero-titolo h1 {
+.rosso-hero-titolo h1, .giallo-hero-titolo h1, .blu-hero-titolo h1, .verde-hero-titolo h1, .viola-hero-titolo h1, .arancione-hero-titolo h1, .nero-hero-titolo h1, .bianco-hero-titolo h1, .grigio-hero-titolo h1 {
     font-family: var(--font-titoli);
     font-size: var(--titolo-hero);
     font-weight: 400;
@@ -1083,7 +1118,7 @@ body {
     margin: 0;
 }
 
-.rosso-hero-sottotitolo {
+.rosso-hero-sottotitolo, .giallo-hero-sottotitolo, .blu-hero-sottotitolo, .verde-hero-sottotitolo, .viola-hero-sottotitolo, .arancione-hero-sottotitolo, .nero-hero-sottotitolo, .bianco-hero-sottotitolo, .grigio-hero-sottotitolo {
     font-family: var(--font-sans);
     font-size: var(--sottotitolo);
     font-weight: 500;
@@ -1091,7 +1126,7 @@ body {
 }
 
 /* IMPATTO / ASSOCIAZIONI / USO */
-.rosso-info {
+.rosso-info, .giallo-info, .blu-info, .verde-info, .viola-info, .arancione-info, .nero-info, .bianco-info, .grigio-info {
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
@@ -1102,13 +1137,13 @@ body {
     box-sizing: border-box;
 }
 
-.rosso-info-blocco {
+.rosso-info-blocco, .giallo-info-blocco, .blu-info-blocco, .verde-info-blocco, .viola-info-blocco, .arancione-info-blocco, .nero-info-blocco, .bianco-info-blocco, .grigio-info-blocco {
     display: flex;
     justify-content: space-between;
     gap: 64px;
 }
 
-.rosso-info-titolo {
+.rosso-info-titolo, .giallo-info-titolo, .blu-info-titolo, .verde-info-titolo, .viola-info-titolo, .arancione-info-titolo, .nero-info-titolo, .bianco-info-titolo, .grigio-info-titolo {
     width: 350px;
     flex-shrink: 0;
     font-family: var(--font-sans);
@@ -1118,7 +1153,7 @@ body {
     margin: 0;
 }
 
-.rosso-info-testo {
+.rosso-info-testo, .giallo-info-testo, .blu-info-testo, .verde-info-testo, .viola-info-testo, .arancione-info-testo, .nero-info-testo, .bianco-info-testo, .grigio-info-testo {
     max-width: 560px;
     font-family: var(--font-sans);
     font-size: var(--testo-base);
@@ -1129,7 +1164,7 @@ body {
 }
 
 /* CODICI COLORE */
-.rosso-codici {
+.rosso-codici, .giallo-codici, .blu-codici, .verde-codici, .viola-codici, .arancione-codici, .nero-codici, .bianco-codici, .grigio-codici {
     width: 100%;
     height: 452px;
     background-color: #FAFAFA;
@@ -1139,7 +1174,7 @@ body {
     box-sizing: border-box;
 }
 
-.rosso-codici-contenitore {
+.rosso-codici-contenitore, .giallo-codici-contenitore, .blu-codici-contenitore, .verde-codici-contenitore, .viola-codici-contenitore, .arancione-codici-contenitore, .nero-codici-contenitore, .bianco-codici-contenitore, .grigio-codici-contenitore {
     max-width: 1334px;
     width: 100%;
     display: flex;
@@ -1149,17 +1184,17 @@ body {
     box-sizing: border-box;
 }
 
-.rosso-codici-griglia {
+.rosso-codici-griglia, .giallo-codici-griglia, .blu-codici-griglia, .verde-codici-griglia, .viola-codici-griglia, .arancione-codici-griglia, .nero-codici-griglia, .bianco-codici-griglia, .grigio-codici-griglia {
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 50px;
     width: 100%;
 }
 
-.rosso-codice-card {
-    width: 280px;
-    height: 93px;
+.rosso-codice-card, .giallo-codice-card, .blu-codice-card, .verde-codice-card, .viola-codice-card, .arancione-codice-card, .nero-codice-card, .bianco-codice-card, .grigio-codice-card {
+    width: clamp(250px, 100%, 300px);
+    height: 90px;
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
@@ -1170,7 +1205,7 @@ body {
     gap: 12px;
 }
 
-.rosso-codice-campione {
+.rosso-codice-campione, .giallo-codice-campione, .blu-codice-campione, .verde-codice-campione, .viola-codice-campione, .arancione-codice-campione, .nero-codice-campione, .bianco-codice-campione, .grigio-codice-campione {
     width: 60px;
     height: 60px;
     border-radius: 15px;
@@ -1178,17 +1213,17 @@ body {
     overflow: hidden;
 }
 
-.rosso-campione-pieno {
+.rosso-campione-pieno  {
     background-color: #FF0000;
 }
 
-.rosso-campione-cmyk {
+.rosso-campione-cmyk, .giallo-campione-cmyk, .blu-campione-cmyk, .verde-campione-cmyk, .viola-campione-cmyk, .arancione-campione-cmyk, .nero-campione-cmyk, .bianco-campione-cmyk, .grigio-campione-cmyk {
     display: flex;
     flex-direction: column;
     gap: 5.12px;
 }
 
-.rosso-campione-barra {
+.rosso-campione-barra, .giallo-campione-barra, .blu-campione-barra, .verde-campione-barra, .viola-campione-barra, .arancione-campione-barra, .nero-campione-barra, .bianco-campione-barra, .grigio-campione-barra {
     width: 60px;
     height: 10px;
     border-radius: 15px;
@@ -1206,13 +1241,13 @@ body {
     background-color: #FFF200;
 }
 
-.rosso-codice-info {
+.rosso-codice-info, .giallo-codice-info, .blu-codice-info, .verde-codice-info, .viola-codice-info, .arancione-codice-info, .nero-codice-info, .bianco-codice-info, .grigio-codice-info {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.rosso-codice-info h3 {
+.rosso-codice-info h3, .giallo-codice-info h3, .blu-codice-info h3, .verde-codice-info h3, .viola-codice-info h3, .arancione-codice-info h3, .nero-codice-info h3, .bianco-codice-info h3, .grigio-codice-info h3 {
     font-family: var(--font-sans);
     font-size: var(--titolo-card-colori);
     font-weight: 600;
@@ -1220,7 +1255,7 @@ body {
     margin: 0;
 }
 
-.rosso-codice-info p {
+.rosso-codice-info p, .giallo-codice-info p, .blu-codice-info p, .verde-codice-info p, .viola-codice-info p, .arancione-codice-info p, .nero-codice-info p, .bianco-codice-info p, .grigio-codice-info p {
     font-family: var(--font-sans);
     font-size: var(--didascalia-card-codici-colore);
     font-weight: 400;
@@ -1229,7 +1264,7 @@ body {
 }
 
 /* ESEMPI DI UTILIZZO */
-.rosso-esempi {
+.rosso-esempi, .giallo-esempi, .blu-esempi, .verde-esempi, .viola-esempi, .arancione-esempi, .nero-esempi, .bianco-esempi, .grigio-esempi {
     width: 100%;
     padding: 160px 0;
     background-color: #ffffff;
@@ -1240,7 +1275,7 @@ body {
     box-sizing: border-box;
 }
 
-.rosso-esempi-titolo {
+.rosso-esempi-titolo, .giallo-esempi-titolo, .blu-esempi-titolo, .verde-esempi-titolo, .viola-esempi-titolo, .arancione-esempi-titolo, .nero-esempi-titolo, .bianco-esempi-titolo, .grigio-esempi-titolo {
     font-family: var(--font-sans);
     font-size: var(--titolo-sezione);
     font-weight: 600;
@@ -1249,19 +1284,16 @@ body {
     text-align: center;
 }
 
-.rosso-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
+.rosso-esempi-griglia, .giallo-esempi-griglia, .blu-esempi-griglia, .verde-esempi-griglia, .viola-esempi-griglia, .arancione-esempi-griglia, .nero-esempi-griglia, .bianco-esempi-griglia, .grigio-esempi-griglia {
     display: grid;
     grid-template-columns: repeat(3, 366px);
     justify-content: space-between;
-    gap: 45px;
+    gap: clamp(30px, 2.5vw, 45px);
     box-sizing: border-box;
 }
 
-.rosso-esempio-card {
-    max-width: 366px;
-    width: 100%;
+.rosso-esempio-card, .giallo-esempio-card, .blu-esempio-card, .verde-esempio-card, .viola-esempio-card, .arancione-esempio-card, .nero-esempio-card, .bianco-esempio-card, .grigio-esempio-card {
+    max-width: 360px;
     height: 178px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -1274,7 +1306,7 @@ body {
     gap: 16px;
 }
 
-.rosso-esempio-testo {
+.viola-esempio-testo, .nero-esempio-testo{
     width: 175px;
     height: 138px;
     flex-shrink: 0;
@@ -1285,7 +1317,18 @@ body {
     gap: 12px;
 }
 
-.rosso-esempio-testo h3 {
+.rosso-esempio-testo, .giallo-esempio-testo, .blu-esempio-testo, .verde-esempio-testo, .arancione-esempio-testo, .bianco-esempio-testo, .grigio-esempio-testo {
+    width: 170px;
+    height: 138px;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.rosso-esempio-testo h3, .giallo-esempio-testo h3, .blu-esempio-testo h3, .verde-esempio-testo h3, .viola-esempio-testo h3, .arancione-esempio-testo h3, .nero-esempio-testo h3, .bianco-esempio-testo h3, .grigio-esempio-testo h3 {
     font-family: var(--font-sans);
     font-size: var(--titolo-card-colori);
     font-weight: 600;
@@ -1294,7 +1337,7 @@ body {
     text-align: left;
 }
 
-.rosso-esempio-testo p {
+.rosso-esempio-testo p, .giallo-esempio-testo p, .blu-esempio-testo p, .verde-esempio-testo p, .viola-esempio-testo p, .arancione-esempio-testo p, .nero-esempio-testo p, .bianco-esempio-testo p, .grigio-esempio-testo p {
     font-family: var(--font-sans);
     font-size: var(--didascalia-card-colori-esempi);
     font-weight: 400;
@@ -1303,7 +1346,7 @@ body {
     text-align: left;
 }
 
-.rosso-esempio-immagine {
+.rosso-esempio-immagine, .giallo-esempio-immagine, .blu-esempio-immagine, .verde-esempio-immagine, .viola-esempio-immagine, .arancione-esempio-immagine, .nero-esempio-immagine, .bianco-esempio-immagine, .grigio-esempio-immagine {
     max-width: 100px;
     flex-shrink: 0;
     display: flex;
@@ -1311,17 +1354,16 @@ body {
     justify-content: center;
 }
 
-.rosso-esempio-immagine img {
-    max-height: 100px;
+.rosso-esempio-immagine img, .giallo-esempio-immagine img, .blu-esempio-immagine img, .verde-esempio-immagine img, .viola-esempio-immagine img, .arancione-esempio-immagine img, .nero-esempio-immagine img, .bianco-esempio-immagine img, .grigio-esempio-immagine img {
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     display: block;
 }
 
 /* TORNA INDIETRO / AVANTI */
-.rosso-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
+.rosso-percorso, .giallo-percorso, .blu-percorso, .verde-percorso, .viola-percorso, .arancione-percorso, .nero-percorso, .bianco-percorso, .grigio-percorso {
+    margin: 20px;
     padding: 0px 0px 100px;
     box-sizing: border-box;
     display: flex;
@@ -1330,7 +1372,12 @@ body {
 }
 
 .rosso-percorso-prev,
-.rosso-percorso-next {
+.rosso-percorso-next, .giallo-percorso-prev,
+.giallo-percorso-next, .blu-percorso-prev, .blu-percorso-next,
+.verde-percorso-prev, .verde-percorso-next, .viola-percorso-prev,
+.viola-percorso-next, .arancione-percorso-prev, .arancione-percorso-next,
+.nero-percorso-prev, .nero-percorso-next, .bianco-percorso-prev,
+.bianco-percorso-next, .grigio-percorso-prev, .grigio-percorso-next {
     font-family: var(--font-sans);
     font-size: var(--link-nav);
     font-weight: 500;
@@ -1343,159 +1390,22 @@ body {
 }
 
 .rosso-percorso-prev:hover,
-.rosso-percorso-next:hover {
+.rosso-percorso-next:hover, .giallo-percorso-prev:hover,
+.giallo-percorso-next:hover, .blu-percorso-prev:hover, .blu-percorso-next:hover,
+.verde-percorso-prev:hover, .verde-percorso-next:hover, .viola-percorso-prev:hover,
+.viola-percorso-next:hover, .arancione-percorso-prev:hover, .arancione-percorso-next:hover,
+.nero-percorso-prev:hover, .nero-percorso-next:hover, .bianco-percorso-prev:hover,
+.bianco-percorso-next:hover, .grigio-percorso-prev:hover, .grigio-percorso-next:hover {
     opacity: 0.7;
 }
 
-.rosso-percorso-freccia {
+.rosso-percorso-freccia, .giallo-percorso-freccia, .blu-percorso-freccia, .verde-percorso-freccia, .viola-percorso-freccia, .arancione-percorso-freccia, .nero-percorso-freccia, .bianco-percorso-freccia, .grigio-percorso-freccia {
     font-size: 20px;
 }
 
 /* ========== PAGINA COLORE GIALLO ========== */
-/* HERO GIALLO */
-.giallo-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_giallo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.giallo-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.giallo-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.giallo-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.giallo-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.giallo-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.giallo-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.giallo-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-}
-
-.giallo-info-testo-riga-gap {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-}
-
-/* CODICI COLORE */
-.giallo-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.giallo-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.giallo-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.giallo-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.giallo-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .giallo-campione-pieno {
     background-color: #FFFF00;
-}
-
-.giallo-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.giallo-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .giallo-campione-grigio {
@@ -1506,316 +1416,9 @@ body {
     background-color: #FFF200;
 }
 
-.giallo-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.giallo-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.giallo-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.giallo-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.giallo-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.giallo-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.giallo-esempio-card {
-    max-width: 366px;
-    width: 100%;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.giallo-esempio-testo {
-    width: 185px;
-    height: 83px;
-    flex-shrink: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.giallo-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.giallo-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.giallo-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: 20px;
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.giallo-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.giallo-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.giallo-esempio-immagine img {
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.giallo-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0px 0px 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.giallo-percorso-prev,
-.giallo-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.giallo-percorso-prev:hover,
-.giallo-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.giallo-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE BLU ========== */
-/* HERO BLU */
-.blu-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_blu.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.blu-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.blu-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.blu-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.blu-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.blu-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.blu-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.blu-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-    text-wrap: pretty;
-}
-
-.blu-info-testo-riga-gap {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-}
-
-/* CODICI COLORE */
-.blu-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.blu-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.blu-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.blu-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.blu-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .blu-campione-pieno {
     background-color: #0000FF;
-}
-
-.blu-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.blu-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .blu-campione-blu {
@@ -1830,297 +1433,9 @@ body {
     background-color: #F0EFEF;
 }
 
-.blu-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.blu-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.blu-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.blu-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.blu-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.blu-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.blu-esempio-card {
-    max-width: 366px;
-    width: 100%;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.blu-esempio-testo {
-    width: 210px;
-    height: 140px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.blu-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.blu-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.blu-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.blu-esempio-immagine img {
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.blu-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0px 0px 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.blu-percorso-prev,
-.blu-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.blu-percorso-prev:hover,
-.blu-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.blu-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE VERDE ========== */
-/* HERO VERDE */
-.verde-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_verde.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.verde-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.verde-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.verde-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.verde-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.verde-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.verde-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.verde-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-    text-wrap: pretty;
-}
-
-.verde-info-testo-riga-gap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* CODICI COLORE */
-.verde-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.verde-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.verde-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.verde-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.verde-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .verde-campione-pieno {
     background-color: #00FF00;
-}
-
-.verde-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.verde-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .verde-campione-ciano {
@@ -2135,297 +1450,9 @@ body {
     background-color: #F0EFEF;
 }
 
-.verde-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.verde-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.verde-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.verde-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.verde-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.verde-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.verde-esempio-card {
-    max-width: 366px;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.verde-esempio-testo {
-    width: 190px;
-    height: 136px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.verde-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.verde-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.verde-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.verde-esempio-immagine img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.verde-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 100px; /* AGGIUNTO: 32px ai lati, coerente con le altre sezioni */
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.verde-percorso-prev,
-.verde-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.verde-percorso-prev:hover,
-.verde-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.verde-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE VIOLA ========== */
-/* HERO VIOLA */
-.viola-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_viola.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.viola-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.viola-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.viola-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.viola-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.viola-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.viola-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.viola-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-    text-wrap: pretty;
-}
-
-.viola-info-testo-riga {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* CODICI COLORE */
-.viola-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.viola-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.viola-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.viola-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.viola-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .viola-campione-pieno {
     background-color: #8000FF;
-}
-
-.viola-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.viola-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .viola-campione-ciano {
@@ -2441,298 +1468,9 @@ body {
     background-color: #F0EFEF;
 }
 
-.viola-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.viola-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.viola-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.viola-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.viola-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.viola-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.viola-esempio-card {
-    max-width: 366px;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.viola-esempio-testo {
-    width: 197px;
-    height: 141px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.viola-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.viola-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.viola-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.viola-esempio-immagine img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.viola-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.viola-percorso-prev,
-.viola-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.viola-percorso-prev:hover,
-.viola-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.viola-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE ARANCIONE ========== */
-/* HERO ARANCIONE */
-.arancione-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_arancione.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.arancione-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.arancione-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.arancione-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-    white-space: nowrap;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.arancione-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.arancione-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.arancione-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.arancione-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-    text-wrap: pretty;
-}
-
-.arancione-info-testo-riga {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* CODICI COLORE */
-.arancione-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.arancione-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.arancione-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.arancione-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.arancione-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .arancione-campione-pieno {
     background-color: #FFA500;
-}
-
-.arancione-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.arancione-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .arancione-campione-grigio {
@@ -2748,298 +1486,9 @@ body {
     background-color: #FEE506;
 }
 
-.arancione-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.arancione-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.arancione-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.arancione-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.arancione-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.arancione-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.arancione-esempio-card {
-    max-width: 366px;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.arancione-esempio-testo {
-    width: 197px;
-    height: 145px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.arancione-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.arancione-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.arancione-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.arancione-esempio-immagine img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.arancione-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.arancione-percorso-prev,
-.arancione-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.arancione-percorso-prev:hover,
-.arancione-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.arancione-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE NERO ========== */
-/* HERO NERO */
-.nero-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_nero.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.nero-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.nero-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.nero-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-    white-space: nowrap;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.nero-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.nero-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.nero-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.nero-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-}
-
-.nero-info-testo-riga-gap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-wrap: pretty;
-}
-
-/* CODICI COLORE */
-.nero-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.nero-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.nero-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.nero-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.nero-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .nero-campione-pieno {
     background-color: #000000;
-}
-
-.nero-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.nero-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .nero-campione-grigio {
@@ -3050,600 +1499,19 @@ body {
     background-color: #000000;
 }
 
-.nero-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.nero-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.nero-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.nero-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.nero-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.nero-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.nero-esempio-card {
-    max-width: 366px;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.nero-esempio-testo {
-    width: 185px;
-    height: 145px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.nero-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.nero-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.nero-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nero-esempio-immagine img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.nero-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nero-percorso-prev,
-.nero-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.nero-percorso-prev:hover,
-.nero-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.nero-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE BIANCO ========== */
-/* HERO BIANCO */
-.bianco-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_bianco.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.bianco-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.bianco-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.bianco-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-    white-space: nowrap;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.bianco-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.bianco-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.bianco-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.bianco-info-testo {
-    max-width: 540px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-}
-
-.bianco-info-testo-riga {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-wrap: pretty;
-}
-
-/* CODICI COLORE */
-.bianco-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.bianco-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.bianco-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.bianco-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.bianco-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border: 1.5px solid #000000;
-    box-sizing: border-box;
-}
-
 .bianco-campione-pieno {
     background-color: #FFFFFF;
-}
-
-.bianco-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.bianco-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
+    border: 1.5px solid #000000;
 }
 
 .bianco-campione-grigio {
     background-color: #F0EFEF;
 }
 
-.bianco-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.bianco-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.bianco-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.bianco-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.bianco-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.bianco-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.bianco-esempio-card {
-    max-width: 366px;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.bianco-esempio-testo {
-    width: 197px;
-    height: 143px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.bianco-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.bianco-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.bianco-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bianco-esempio-immagine img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.bianco-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bianco-percorso-prev,
-.bianco-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.bianco-percorso-prev:hover,
-.bianco-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.bianco-percorso-freccia {
-    font-size: 20px;
-}
-
 /* ========== PAGINA COLORE GRIGIO ========== */
-/* HERO GRIGIO */
-.grigio-hero {
-    width: 100%;
-    height: clamp(250px, 50vw, 700px);
-    background-image: url("immagini/hero_image_grigio.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.grigio-hero-titolo {
-    max-width: 900px;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.grigio-hero-titolo h1 {
-    font-family: var(--font-titoli);
-    font-size: var(--titolo-hero);
-    font-weight: 400;
-    margin: 0;
-}
-
-.grigio-hero-sottotitolo {
-    font-family: var(--font-sans);
-    font-size: var(--sottotitolo);
-    font-weight: 500;
-    margin: 0;
-    white-space: nowrap;
-}
-
-/* IMPATTO / ASSOCIAZIONI / USO */
-.grigio-info {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 140px 32px;
-    box-sizing: border-box;
-}
-
-.grigio-info-blocco {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-}
-
-.grigio-info-titolo {
-    width: 350px;
-    flex-shrink: 0;
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.grigio-info-testo {
-    max-width: 560px;
-    font-family: var(--font-sans);
-    font-size: var(--testo-base);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin: 0;
-}
-
-.grigio-info-testo-riga {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-wrap: pretty;
-}
-
-/* CODICI COLORE */
-.grigio-codici {
-    width: 100%;
-    height: 452px;
-    background-color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.grigio-codici-contenitore {
-    max-width: 1334px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 0 32px;
-    box-sizing: border-box;
-}
-
-.grigio-codici-griglia {
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.grigio-codice-card {
-    width: 280px;
-    height: 93px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.grigio-codice-campione {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
 .grigio-campione-pieno {
     background-color: #BFBFBF;
-}
-
-.grigio-campione-cmyk {
-    display: flex;
-    flex-direction: column;
-    gap: 5.12px;
-}
-
-.grigio-campione-barra {
-    width: 60px;
-    height: 10px;
-    border-radius: 15px;
 }
 
 .grigio-campione-grigio {
@@ -3654,152 +1522,6 @@ body {
     background-color: #000000;
     width: 25%;
 }
-
-.grigio-codice-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.grigio-codice-info h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-}
-
-.grigio-codice-info p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-codici-colore);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-
-/* ESEMPI DI UTILIZZO */
-.grigio-esempi {
-    width: 100%;
-    padding: 160px 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    box-sizing: border-box;
-}
-
-.grigio-esempi-titolo {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-sezione);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: center;
-}
-
-.grigio-esempi-griglia {
-    max-width: 1220px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 366px);
-    justify-content: space-between;
-    gap: 45px;
-    box-sizing: border-box;
-}
-
-.grigio-esempio-card {
-    max-width: 366px;
-    height: 178px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.grigio-esempio-testo {
-    width: 205px;
-    height: 168px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.grigio-esempio-testo h3 {
-    font-family: var(--font-sans);
-    font-size: var(--titolo-card-colori);
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.grigio-esempio-testo p {
-    font-family: var(--font-sans);
-    font-size: var(--didascalia-card-colori-esempi);
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-}
-
-.grigio-esempio-immagine {
-    max-width: 100px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.grigio-esempio-immagine img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-    display: block;
-}
-
-/* TORNA INDIETRO / AVANTI */
-.grigio-percorso {
-    max-width: 1220px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.grigio-percorso-prev,
-.grigio-percorso-next {
-    font-family: var(--font-sans);
-    font-size: var(--link-nav);
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 40px;
-}
-
-.grigio-percorso-prev:hover,
-.grigio-percorso-next:hover {
-    opacity: 0.7;
-}
-
-.grigio-percorso-freccia {
-    font-size: 20px;
-}
-
 
 /* ========== RESPONSIVE ========== */
 /* ========== TABLET ========== */
@@ -4052,6 +1774,7 @@ body {
     .verde-percorso, .viola-percorso, .arancione-percorso,
     .nero-percorso, .bianco-percorso, .grigio-percorso {
         padding: 0 30px 60px;
+        margin: 0;
     }
 
     /* ========== PAGINA PERCEZIONE ========== */
@@ -4538,6 +2261,7 @@ body {
     .verde-percorso, .viola-percorso, .arancione-percorso,
     .nero-percorso, .bianco-percorso, .grigio-percorso {
         padding: 0 20px 60px;
+        margin: 0;
     }
 
     /* ========== PAGINA PERCEZIONE ========== */
