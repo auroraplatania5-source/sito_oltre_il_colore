@@ -1527,6 +1527,488 @@ body {
     width: 25%;
 }
 
+/* ========== PAGINA TEORIA DEL COLORE ========== */
+
+/* ========== HERO TEORIA ========== */
+.teoria-hero {
+    width: 100%;
+    height: clamp(250px, 50vw, 700px);
+    background-image: url("immagini/hero_teoria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.teoria-hero-testo {
+    width: 100%;
+    color: #ffffff;
+}
+
+.teoria-hero-testo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+    margin: 0;
+}
+
+.teoria-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    line-height: 1.25;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+/* ========== INTRODUZIONE TEORIA ========== */
+.teoria-introduzione {
+    width: 100%;
+    padding: 130px 32px 150px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.teoria-introduzione-contenitore {
+    width: 100%;
+    max-width: 875px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.teoria-introduzione-contenitore p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* ========== STRUTTURA SEZIONI TEORIA ========== */
+.teoria-cerchio,
+.teoria-sfera {
+    width: 100%;
+    padding: 100px 0 140px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.teoria-sezione-contenitore {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.teoria-sezione-testo {
+    width: 100%;
+    max-width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.teoria-sezione-testo h2,
+.teoria-blocco-testo h2 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    line-height: 1.15;
+    color: #000000;
+    margin: 0;
+}
+
+.teoria-gruppo-paragrafi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.teoria-gruppo-paragrafi p,
+.teoria-blocco-testo p,
+.teoria-blocco-testo li {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* ========== CERCHIO CROMATICO ========== */
+.teoria-cerchio-immagine {
+    width: 100%;
+    max-width: 380px;
+    flex-shrink: 0;
+}
+
+.teoria-cerchio-immagine img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ========== COLORI CALDI E FREDDI ========== */
+.teoria-caldi-freddi {
+    width: 100%;
+    padding: 90px 0;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+}
+
+.teoria-caldi-freddi-contenitore {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    box-sizing: border-box;
+}
+
+.teoria-caldi-freddi-immagine {
+    width: 100%;
+    max-width: 430px;
+    flex-shrink: 0;
+}
+
+.teoria-caldi-freddi-immagine img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.teoria-caldi-freddi-testo {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.teoria-blocco-testo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.teoria-blocco-testo ul {
+    padding-left: 24px;
+    margin: 0;
+}
+
+
+/* ========== SFERA DEI COLORI ========== */
+.teoria-sfera {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.teoria-sfera-immagine {
+    width: 100%;
+    max-width: 420px;
+    flex-shrink: 0;
+}
+
+.teoria-sfera-immagine img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ========== STELLA CROMATICA ========== */
+.teoria-stella {
+    width: 100%;
+    padding: 90px 0;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+}
+
+.teoria-stella-contenitore {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    box-sizing: border-box;
+}
+
+.teoria-stella-immagine {
+    width: 100%;
+    max-width: 480px;
+    flex-shrink: 0;
+}
+
+.teoria-stella-immagine img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ========== I SETTE CONTRASTI ========== */
+.teoria-contrasti {
+    width: 100%;
+    padding: 130px 0 180px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.teoria-contrasti-contenitore {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.teoria-contrasti-introduzione {
+    width: 100%;
+    max-width: 875px;
+    margin: 0 auto 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.teoria-contrasti-introduzione h2 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    line-height: 1.15;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+.teoria-contrasti-introduzione p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.teoria-contrasti-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.teoria-contrasto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.teoria-contrasto-immagine {
+    width: 320px;
+    height: 145px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.15);
+}
+
+.teoria-contrasto-immagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.teoria-contrasto p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+/* ========== PAGINA MODELLI COLORE ========== */
+
+/* ========== HERO MODELLI ========== */
+.modelli-hero {
+    width: 100%;
+    height: clamp(250px, 50vw, 700px);
+    background-image: url("immagini/hero_modelli.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.modelli-hero-testo {
+    width: 100%;
+    color: #ffffff;
+}
+
+.modelli-hero-testo h1 {
+    font-family: var(--font-titoli);
+    font-size: var(--titolo-hero);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+    margin: 0;
+}
+
+.modelli-hero-sottotitolo {
+    font-family: var(--font-sans);
+    font-size: var(--sottotitolo);
+    font-weight: 500;
+    line-height: 1.25;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+/* ========== INTRODUZIONE MODELLI ========== */
+.modelli-introduzione {
+    width: 100%;
+    padding: 120px 32px 140px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.modelli-introduzione-contenitore {
+    width: 100%;
+    max-width: 875px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.modelli-introduzione-contenitore p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* ========== SEZIONI MODELLI ========== */
+.modelli-sezione {
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.modelli-sezione-bianca {
+    background-color: #ffffff;
+}
+
+.modelli-sezione-grigia {
+    background-color: #FAFAFA;
+}
+
+.modelli-sezione-contenitore {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    box-sizing: border-box;
+}
+
+.modelli-sezione-inversa {
+    flex-direction: row;
+}
+
+.modelli-sezione-testo {
+    width: 100%;
+    max-width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modelli-sezione-testo h2 {
+    font-family: var(--font-sans);
+    font-size: var(--titolo-sezione);
+    font-weight: 600;
+    line-height: 1.15;
+    color: #000000;
+    margin: 0 0 6px;
+}
+
+.modelli-sezione-testo p {
+    font-family: var(--font-sans);
+    font-size: var(--testo-base);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+}
+
+.modelli-sezione-immagine {
+    width: 100%;
+    max-width: 420px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modelli-sezione-immagine img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ========== DIMENSIONI SPECIFICHE IMMAGINI ========== */
+.modelli-rgb-immagine {
+    max-width: 360px;
+}
+
+.modelli-cmyk-immagine {
+    max-width: 390px;
+}
+
+.modelli-hsb-immagine {
+    max-width: 390px;
+}
+
+.modelli-lab-immagine {
+    max-width: 390px;
+}
+
 /* ========== RESPONSIVE ========== */
 /* ========== TABLET ========== */
 @media screen and (max-width: 1200px) {
@@ -1890,6 +2372,179 @@ body {
     .contenitore-bibliografia {
         width: clamp(400px, 75vw, 900px);
         margin: 0;
+    }
+        /* ========== RESPONSIVE MOBILE - PAGINA TEORIA ========== */
+
+    .teoria-hero {
+        height: clamp(280px, 70vw, 420px);
+        padding: 140px 20px 45px;
+        background-position: center;
+        align-items: center;
+    }
+
+    .teoria-hero-testo h1 {
+        max-width: 280px;
+        font-size: clamp(32px, 9vw, 48px);
+        line-height: 1.05;
+    }
+
+    .teoria-hero-sottotitolo {
+        max-width: 260px;
+        font-size: clamp(14px, 4vw, 18px);
+        line-height: 1.25;
+    }
+
+    .teoria-introduzione {
+        padding: 75px 24px 90px;
+    }
+
+    .teoria-introduzione-contenitore {
+        max-width: 100%;
+    }
+
+    .teoria-cerchio,
+    .teoria-sfera {
+        padding: 70px 0 90px;
+    }
+
+    .teoria-sezione-contenitore {
+        padding: 0 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .teoria-sezione-testo {
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .teoria-sezione-testo h2,
+    .teoria-blocco-testo h2 {
+        font-size: 22px;
+    }
+
+    .teoria-cerchio-immagine,
+    .teoria-sfera-immagine {
+        width: 100%;
+        max-width: 320px;
+        align-self: center;
+    }
+
+    .teoria-caldi-freddi {
+        padding: 70px 0;
+    }
+
+    .teoria-caldi-freddi-contenitore {
+        padding: 0 24px;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .teoria-caldi-freddi-immagine {
+        width: 100%;
+        max-width: 330px;
+        align-self: center;
+    }
+
+    .teoria-caldi-freddi-testo {
+        max-width: 100%;
+        gap: 35px;
+    }
+
+    .teoria-stella {
+        padding: 70px 0;
+    }
+
+    .teoria-stella-contenitore {
+        padding: 0 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .teoria-stella-immagine {
+        width: 100%;
+        max-width: 340px;
+        align-self: center;
+    }
+
+    .teoria-contrasti {
+        padding: 80px 0 110px;
+    }
+
+    .teoria-contrasti-contenitore {
+        padding: 0 24px;
+    }
+
+    .teoria-contrasti-introduzione {
+        margin-bottom: 70px;
+        gap: 15px;
+    }
+
+    .teoria-contrasti-introduzione h2 {
+        font-size: 22px;
+    }
+
+    .teoria-contrasti-lista {
+        gap: 60px;
+    }
+
+    .teoria-contrasto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .teoria-contrasto-immagine {
+        width: 100%;
+        max-width: 360px;
+        height: 160px;
+        align-self: center;
+        border-radius: 25px;
+    }
+
+    .teoria-contrasto p {
+        width: 100%;
+    }
+
+        /* ========== RESPONSIVE TABLET - PAGINA MODELLI ========== */
+
+    .modelli-hero {
+        height: clamp(350px, 55vw, 600px);
+        padding: 0 32px;
+    }
+
+    .modelli-introduzione {
+        padding: 100px 32px 120px;
+    }
+
+    .modelli-introduzione-contenitore {
+        max-width: clamp(500px, 75vw, 875px);
+    }
+
+    .modelli-sezione {
+        padding: 85px 0;
+    }
+
+    .modelli-sezione-contenitore {
+        gap: 55px;
+        padding: 0 32px;
+    }
+
+    .modelli-sezione-testo {
+        max-width: 540px;
+    }
+
+    .modelli-rgb-immagine {
+        max-width: 320px;
+    }
+
+    .modelli-cmyk-immagine,
+    .modelli-hsb-immagine,
+    .modelli-lab-immagine {
+        max-width: 350px;
     }
 }
 
@@ -2424,5 +3079,216 @@ body {
     .bianco-info-testo p,
     .grigio-info-testo p {
         font-size: 17px;
+    }
+    /* ========== RESPONSIVE MOBILE - PAGINA TEORIA ========== */
+
+    .teoria-hero {
+        height: clamp(280px, 70vw, 420px);
+        padding: 140px 20px 45px;
+        background-position: center;
+        align-items: center;
+    }
+
+    .teoria-hero-testo h1 {
+        max-width: 280px;
+        font-size: clamp(32px, 9vw, 48px);
+        line-height: 1.05;
+    }
+
+    .teoria-hero-sottotitolo {
+        max-width: 260px;
+        font-size: clamp(14px, 4vw, 18px);
+        line-height: 1.25;
+    }
+
+    .teoria-introduzione {
+        padding: 75px 24px 90px;
+    }
+
+    .teoria-introduzione-contenitore {
+        max-width: 100%;
+    }
+
+    .teoria-cerchio,
+    .teoria-sfera {
+        padding: 70px 0 90px;
+    }
+
+    .teoria-sezione-contenitore {
+        padding: 0 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .teoria-sezione-testo {
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .teoria-sezione-testo h2,
+    .teoria-blocco-testo h2 {
+        font-size: 22px;
+    }
+
+    .teoria-cerchio-immagine,
+    .teoria-sfera-immagine {
+        width: 100%;
+        max-width: 320px;
+        align-self: center;
+    }
+
+    .teoria-caldi-freddi {
+        padding: 70px 0;
+    }
+
+    .teoria-caldi-freddi-contenitore {
+        padding: 0 24px;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .teoria-caldi-freddi-immagine {
+        width: 100%;
+        max-width: 330px;
+        align-self: center;
+    }
+
+    .teoria-caldi-freddi-testo {
+        max-width: 100%;
+        gap: 35px;
+    }
+
+    .teoria-stella {
+        padding: 70px 0;
+    }
+
+    .teoria-stella-contenitore {
+        padding: 0 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .teoria-stella-immagine {
+        width: 100%;
+        max-width: 340px;
+        align-self: center;
+    }
+
+    .teoria-contrasti {
+        padding: 80px 0 110px;
+    }
+
+    .teoria-contrasti-contenitore {
+        padding: 0 24px;
+    }
+
+    .teoria-contrasti-introduzione {
+        margin-bottom: 70px;
+        gap: 15px;
+    }
+
+    .teoria-contrasti-introduzione h2 {
+        font-size: 22px;
+    }
+
+    .teoria-contrasti-lista {
+        gap: 60px;
+    }
+
+    .teoria-contrasto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .teoria-contrasto-immagine {
+        width: 100%;
+        max-width: 360px;
+        height: 160px;
+        align-self: center;
+        border-radius: 25px;
+    }
+
+    .teoria-contrasto p {
+        width: 100%;
+    }
+        /* ========== RESPONSIVE MOBILE - PAGINA MODELLI ========== */
+
+    .modelli-hero {
+        height: clamp(280px, 70vw, 420px);
+        padding: 140px 20px 45px;
+        background-position: center;
+        align-items: center;
+    }
+
+    .modelli-hero-testo h1 {
+        max-width: 290px;
+        font-size: clamp(32px, 9vw, 48px);
+        line-height: 1.05;
+    }
+
+    .modelli-hero-sottotitolo {
+        max-width: 280px;
+        font-size: clamp(14px, 4vw, 18px);
+        line-height: 1.25;
+    }
+
+    .modelli-introduzione {
+        padding: 75px 24px 85px;
+    }
+
+    .modelli-introduzione-contenitore {
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .modelli-sezione {
+        padding: 70px 0;
+    }
+
+    .modelli-sezione-contenitore,
+    .modelli-sezione-inversa {
+        padding: 0 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .modelli-sezione-testo {
+        width: 100%;
+        max-width: 100%;
+        gap: 12px;
+    }
+
+    .modelli-sezione-testo h2 {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .modelli-sezione-immagine {
+        width: 100%;
+        max-width: 320px;
+        align-self: center;
+    }
+
+    .modelli-rgb-immagine {
+        max-width: 260px;
+    }
+
+    .modelli-cmyk-immagine {
+        max-width: 290px;
+        order: -1;
+    }
+
+    .modelli-hsb-immagine {
+        max-width: 290px;
+    }
+
+    .modelli-lab-immagine {
+        max-width: 290px;
+        order: -1;
     }
 }
