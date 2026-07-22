@@ -12,7 +12,7 @@
     --testo-base: clamp(17px, 2vw, 20px);
     --citazione: clamp(22px, 2.5vw, 30px);
     --sottotitolo: clamp(24px, 3vw, 32px);
-    --titolo-sezione: clamp(26px, 3vw, 32px);
+    --titolo-sezione: clamp(26px, 3vw, 29px);
     --titolo-hero: clamp(42px, 5vw, 72px);
     
 
