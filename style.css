@@ -72,6 +72,11 @@ body {
     opacity: 0.7;
 }
 
+.main-nav a.attivo {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .hero { 
     width: 100%;
     height: clamp(250px, 50vw, 700px); 
@@ -347,6 +352,11 @@ body {
 
 .main-nav-linguaggio a:hover {
     opacity: 0.7;
+}
+
+.main-nav-linguaggio a.attivo {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .hero-linguaggio {
@@ -2022,6 +2032,11 @@ body {
         gap: 28px;
     }
 
+    .main-nav a.attivo {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
     /* ========== HERO - HOME ========== */
     .hero {
         height: clamp(220px, 55vw, 600px);
@@ -2071,6 +2086,11 @@ body {
     /* ========== HEADER E NAVIGAZIONE ========== */
     .main-nav-linguaggio {
         gap: 28px;
+    }
+
+    .main-nav-linguaggio a.attivo {
+        text-decoration: underline;
+        text-underline-offset: 4px;
     }
 
     /* ========== HERO ========== */
@@ -2573,6 +2593,11 @@ body {
         text-align: center;
     }
 
+    .main-nav a.attivo {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
     .nome-sito {
     flex-shrink: 0;
     font-size: 18px;
@@ -2728,9 +2753,14 @@ body {
         justify-items: center;
     }
 
-    .main-nav-linguaggio a{
+    .main-nav-linguaggio a {
         font-size: 14px;
         text-align: center;
+    }
+
+    .main-nav-linguaggio a.attivo {
+        text-decoration: underline;
+        text-underline-offset: 4px;
     }
 
     /* ========== DESCRIZIONE ========== */
